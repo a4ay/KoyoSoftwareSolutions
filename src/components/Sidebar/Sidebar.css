@@ -1,0 +1,241 @@
+.sidenav {
+    width: 80px;
+    position: fixed;
+    z-index: 11;
+    top: 90px;
+    right: 1px;
+    /* background: #fff; */
+    overflow-x: hidden;
+    padding: 0px 0;
+}
+
+.sidebar a {
+    width: 36px;
+    height: 36px;
+    /* padding: 5px 8px 5px 8px; */
+    color: #ffb03b;
+
+    text-decoration: none;
+    font-size: 20px;
+  padding:0;
+    display: block;
+}
+
+.sidebar :hover {
+    background-color: #ffb03b;
+}
+.sidenav a:hover {
+    color:black;
+  
+}
+#circularprogressbar :hover{
+    
+    background-color: violet;
+}
+
+
+.mainContent {
+    /* margin-right: 80px;  */
+    /* Same width as the sidebar + left position in px */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    /* padding: 0px 10px; */
+}
+
+
+.socialIcons {
+    margin: 5px;
+    margin-left: 20px;
+    padding: 3px;
+    background-color: transparent;
+    color:  #ffb03b;
+    border-radius: 6px;
+    border:2px solid  #ffb03b;
+    
+    z-index: 11;
+    
+}
+
+
+.percentageIcon {
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    padding: 3px;
+    right: 5px;
+    /* border-radius: 50%; */
+    /* border: 3px solid red; */
+    /* border: 3px solid black; */
+    /* border-color: ; */
+    /* border-left: 3px solid green; */
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+
+
+#circularProgressBar {
+
+    background-color: transparent;
+}
+
+
+#circularProgressBar :hover {
+
+    background-color: transparent;
+}
+
+.CircularProgressbar {
+    width: 95% !important;
+    vertical-align: middle;
+    padding-left: 20px;
+    background-color: transparent;
+}
+@media screen and (max-height: 700px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+       
+    }
+    .sidenav  {
+        
+        width: 50px;
+    }
+    .sidebar
+    {
+        width: 70px;
+    }
+    #circularProgressBar {
+       width: 100%;
+       padding-left:10px;
+       background-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .sidenav {
+        padding-top: 15px;
+        display: none;
+
+
+        
+    }
+
+    .sidebar
+    {
+        display: none;
+    }
+    .sidenav a {
+        font-size: 20px;
+        padding-bottom: 5px;
+       
+    }
+    .sidenav  {
+        
+        width: 50px;
+      
+    }
+
+    .sidebar a {
+        padding-left: 0px;
+        width: 26px;
+        height: 26px;
+        padding-bottom: 5px;
+     
+    }
+
+  
+.socialIcons {
+
+    margin-left: 13px;
+ 
+    color: pink;
+    
+}
+
+#circularProgressBar {
+    margin-right: 1px;
+    background-color: transparent;
+}
+
+
+.CircularProgressbar {
+    width: 100% !important;
+    vertical-align: middle;
+    padding-left: 2px;
+    
+    background-color: transparent;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+	font-size: 1rem;
+}
+.percentageIcon {
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+    padding: 3px;
+    right: 5px;
+    /* border-radius: 50%; */
+    /* border: 3px solid red; */
+    /* border: 3px solid black; */
+    /* border-color: ; */
+    /* border-left: 3px solid green; */
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+    
+}
+
+
+
+
+.plusIcon a {
+    /* padding: 5px 13px 5px 13px; */
+}
+
+
+.percentageIcon p {
+    /* color: gray; */
+    /* font-size: small; */
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.chat-button {
+    animation: mymove infinite 2s;
+    animation-delay: 1s;
+    animation-duration: 30s;
+}
+
+@keyframes mymove {
+    0% {
+        transform: scale(1, 1);
+    }
+    1% {
+        transform: scale(1.5, 1.5);
+    }
+    2% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+
+/* .back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #ffc451;
+  color: #151515;
+  transition: all 0.4s;
+} */

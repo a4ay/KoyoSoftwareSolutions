@@ -1,0 +1,21 @@
+.btnAddToCart1 {
+    font-size: 13px;
+    color: #4ab8ad;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #4ab8ad !important;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+.btnAddToCart1:hover {
+    color: #FFF;
+    background: rgba(10, 100, 100, 0.75);
+    border: 2px solid #ffab03;
+}
+.btnAddToCart1 img{
+    width: 10%;
+}
+.descriptionText {
+    font-size: 15px;
+}

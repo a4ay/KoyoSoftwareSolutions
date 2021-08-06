@@ -1,0 +1,13 @@
+.jobBtn, .internBtn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #ffc451;
+    color: #151515;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+.jobBtn:hover, .internBtn:hover {
+    color: #ffc451;
+    background-color: #151515;
+}

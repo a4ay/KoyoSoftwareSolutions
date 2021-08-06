@@ -1,0 +1,87 @@
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features {
+    padding-top: 20px;
+}
+.center-heading
+{
+    margin-left: 7px;
+}
+.cl0
+{
+    width: 80%;
+    float: left ;
+    color: black;
+    background-color: rgb(248, 248, 248);
+    height: max-content;
+    margin-inline-start: 50px;
+}
+@media only screen and (max-width: 800px) 
+{
+    .cl0 ,.cl1
+    {
+        float: left !important;
+        margin-left: 50px ;
+    }
+  }
+.jumbotron
+{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 10px  !important;
+    padding-left: 10px !important;
+    background-color: rgb(248, 248, 248) !important;
+    text-align: justify;
+}
+.images img{
+    width: 100%;
+    height: 96%;
+    padding: 10px;
+}
+.images p{
+    font-size: 20px!important;
+    display: block;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding-right: 15px;
+}
+.cl1
+{
+    width: 80%;
+    float: right;
+    color: black;
+    background-color: rgb(248, 248, 248);
+    margin-right: 50px;
+    
+}
+.features .icon-box {
+    padding-left: 15px;
+}
+
+.features h4 {
+    font-size: 20px;
+    font-weight: 700;
+    /* margin: 5px 0 10px 60px !important; */
+}
+
+.features .icon-box i {
+    font-size: 48px;
+    float: left;
+    color: #ffc451;
+}
+
+.features .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 30px;
+}
+
+.features .image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+  

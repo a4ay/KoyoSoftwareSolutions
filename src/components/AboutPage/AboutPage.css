@@ -1,0 +1,57 @@
+.sidenavAbout {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 10px;
+    background: #ffc451;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 15px 35px;
+}
+  
+.sidenavAbout a {
+    padding: 7px 8px 7px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #151515;
+    display: block;
+    font-weight: bolder;
+    border-radius: 15px 35px;
+    padding-left: 22%;
+}
+  
+.sidenavAbout a:hover {
+    color: #ffc451;
+    background-color: #151515;
+}
+  
+.mainAbout {
+    /* margin-left: 140px; */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenavAbout {padding-top: 15px;}
+    .sidenavAbout a {font-size: 18px;}
+}
+
+.joinDivAbout {
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+.joinBtnAbout {
+    /* border: 2px solid #151515; */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #ffc451;
+    color: #151515;
+    font-size: 20px;
+    /* box-shadow: 5px 5px 30px gray; */
+}
+.joinBtnAbout:hover {
+    color: #ffc451;
+    background-color: #151515;
+}

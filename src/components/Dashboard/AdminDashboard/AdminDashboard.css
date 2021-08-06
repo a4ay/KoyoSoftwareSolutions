@@ -1,0 +1,50 @@
+.mainSidebar {
+    background-color: black;
+}
+
+.mainSidebar2 {
+    background-color: black;
+}
+
+.mainSidebar div, .mainSidebar span, .mainSidebar svg {
+    color: white;
+    font-weight: 1000;
+}
+
+#addProductBtn {
+    border: none;
+    padding: 7px 9px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+}
+
+.dashOptions {
+    padding: 0px 15px;
+}
+
+.dashOptions h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.dashOption1 {
+    background-color: #f1536e;
+}
+
+.projectColor {
+    color: #2be4a8;
+}
+
+.editBtn {
+    background-color: #ffd076;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-left: 3px;
+}
+
+

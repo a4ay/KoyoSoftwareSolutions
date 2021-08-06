@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+
+
+/* would need to be adjusted depending on time */
+.marquee .marqueeone{
+  animation: marquee 10s linear infinite
+}
+
+
+
+
+/* add delay at the end of animation so you dont start while another div is going */
+@keyframes marquee {
+  0% { left: 100%; }
+  50% { left: -100%; }
+  100% {left: -100%}
+}
+.graphic{
+  padding-top: 40px;
+}
+.desktopgraphics
+{
+  display: block;
+}
+.mobilegraphics
+{
+  display: none;
+}
+#maindiv{
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#div1 {
+  display: inline-block;
+  animation: marquee 18s linear infinite;
+}
+
+#div2 {
+  display: inline-block;
+  animation: marquee2 18s linear infinite;
+  animation-delay: 9s;
+}
+
+#div1:hover
+{
+  animation-play-state: paused;
+}
+
+.marqueefilters
+{
+  font-size: 10px;
+background-color: white;
+}
+
+.filter-button
+{
+    font-size: 15px;
+background-color: white;
+    text-align: center;
+ padding-right: 2%;
+font-weight: 500;
+    border:0px;
+  padding:5px;
+    margin-top: -10px;
+border-radius: 4px;
+}
+
+
+
+.filter-button:focus
+{
+background-color: #f2af49;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.Graphics .graphicsflexcontainer
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.Graphics .graphicsocial
+{
+  height: 38px;
+  width: 38px;;
+}
+.Graphics .textgraphicstitle
+{
+  color: aliceblue;
+  font-size: 18px;
+  width:100%;
+padding:1%;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+.Graphics .textgraphicsdescription
+{
+  color: aliceblue;
+  font-size: 15px;
+  width: 100%;
+  padding:1%;
+  text-align: justify;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+.Graphics .first
+{
+ margin:auto;
+ margin-bottom: 3%;
+ 
+
+}
+.Graphics .category
+{
+  
+
+padding-top: 20px;
+padding-bottom: -20px;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(236, 234, 234, 0.3);
+  
+}
+ .Graphics .graphicscontainer
+ {
+ 
+   width: 85%;
+   margin: auto;
+  
+ }
+.Graphics .first .left
+{
+  
+
+  width: 580px;
+ margin:3%;
+ margin-left:-0.1%;
+
+  height: 670px;
+
+text-align: center;
+border-radius: 7px;
+background-image: linear-gradient(to bottom, #f4ecd8, #f2d9a8, #f1c578, #f2af49, #f4960c);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+
+
+
+
+ 
+.Graphics .myImg /*ratio 2:1*/
+{
+  height: 100px;
+  width:200px;
+  position: relative;
+  left:20px;
+  top:20px;
+  z-index: 5;
+  object-fit: cover;
+
+ 
+}
+
+ 
+.Graphics .myImg1 /* ratio 3:2*/
+{
+  height: 140px;
+  width:180px;
+ top:20px;
+ left: -20px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.Graphics .myImg2 /*ratio 3:4*/
+{
+  height: 200px;
+  width:150px;
+  left:-20px;
+  position: relative;
+  overflow: hidden;
+  top:170px;
+z-index: 2;
+object-fit: cover;
+
+}
+
+
+.Graphics .myImg3 /* ratio 5:3*/
+{
+ 
+  height: 150px;
+  width:250px;
+  position: relative;
+  overflow: hidden;
+  left: 20px;
+  bottom: 70px;
+  object-fit: cover;
+}
+
+
+.Graphics .myImg4 /*ratio 1:1 */
+{
+  height: 200px;
+  width:200px;
+  position: relative;
+  overflow: hidden;
+  right: 80px;
+  object-fit: cover;
+}
+
+
+.Graphics .myImg5 /* ratio : 4:3*/
+{
+  position: relative;
+  height: 150px;
+  width:200px;
+  overflow: hidden;
+bottom: 100px;
+object-fit: cover;
+left: -20px;
+}
+
+.Graphics .myImg6 /*ration 16:9*/
+{
+  height: 163px;
+  width:290px;
+  overflow: hidden;
+  position: relative;
+  right:70px;
+  object-fit: cover;
+}
+
+.Graphics .myImg7 /*ratio : 2:3*/
+{
+  height: 150px;
+  width:100px;
+  position: relative;
+  overflow: hidden;
+  bottom: 520px;
+  left: 245px;
+  object-fit: cover;
+
+}
+
+.Graphics .myImg8 /*ratio : 3:5*/
+{
+  height: 120px;
+  width:90px;
+  position: relative;
+  overflow: hidden;
+  bottom: 160px;
+  right: 170px;
+  object-fit: cover;
+
+}
+
+.Graphics .myImg9 /*ratio : 1:2*/
+{
+  height: 200px;
+  width:100px;
+  position: relative;
+  bottom: 210px;
+  overflow: hidden;
+  left: 110px;
+  object-fit: cover;
+}
+
+
+
+
+
+.myImg88
+{
+
+  padding:0%;
+  border-radius: 2px;
+ border:solid #f2af49 2px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+}
+.myImg88:hover {  z-index:10000;cursor: pointer;  padding: 0 !important;-webkit-transform: scale(1.38);
+	transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+}
+
+
+.galleryimage
+{
+  background-color: purple;
+ width: fit-content;
+ 
+}
+
+
+/* Modal Content (image) */
+.modal-content {
+  position: relative;
+  display: flex;
+  
+margin: auto;
+z-index: 1;
+
+  
+}
+
+
+#mydiv {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+ width:100%;
+  height:110vh;
+
+
+ align-items: center;
+  position:fixed;
+  z-index: 1;
+
+display:none;
+  justify-content: center;
+/* Fallback color */
+  background-color: rgba(0, 0, 0, 0.92); /* Black w/ opacity */
+
+}
+
+
+.modalcontainer
+{
+  display: flex;
+margin: auto;
+position:relative;
+background-color: transparent;
+   width:100%;
+            height:80%;
+            z-index:1;
+            margin:auto;
+            text-align: center;
+      
+}
+.overlaygraphics {
+  position:absolute;
+
+  animation: zoom2 0.7s none;
+ 
+  height: 60px;
+
+
+z-index: 3;
+margin: auto;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 50%;
+  transition: .5s ease;
+
+}
+
+
+
+  .overlaygraphics:hover
+{ height:200px;
+ 
+}
+
+
+/* Caption of Modal Image */
+
+
+/* Add Animation */
+.modal-content {  
+  animation: zoom 0.7s forwards;
+  transition: transform .3s ease;
+}
+
+@keyframes zoom {
+  from {height: 0px;width: 0px;} 
+  to {height:100%;width:85%;object-fit: contain;background-color:transparent;}
+}
+
+
+
+/* The Close Button */
+.closee {
+  position:absolute;
+  left:93%;
+  bottom:96%;
+  height: 35px;
+  width: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.closee:hover,
+.closee:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal 
+{
+
+  height:100px ;
+}
+
+
+
+@keyframes zoom2 {
+  from {height: 0px;width: 0px;} 
+  to { height: 60px;
+    ;
+    ;width:50%;}
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .filter-button:focus
+{
+  background-color: white;
+  color: rgba(255,94,19);
+}
+  .modalcontainer:hover  .overlaygraphics
+  {
+    height: 100px;
+  }
+
+ .modal-content
+
+ {
+   position: absolute;
+   
+ }
+  #mydiv
+  {
+    padding: 0%;
+  }
+  .desktopgraphics
+  {
+    display: none;
+  }
+.mobilegraphics
+{
+  display: block;
+}
+
+
+.modalcontainer
+{
+  width: 100%;
+  height: fit-content;
+  position :relative;
+  
+     
+}
+.overlaygraphics {
+  position:absolute;
+  animation: zoom2 1s none;
+ padding: 0%;
+ transition: transform .5s ease;
+  height: 30px;
+
+
+z-index: 3;
+
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden;
+  width: 100%;
+
+}
+
+@keyframes zoom2 {
+  from {height: 0px;width: 0px;} 
+  to {height:30px;width:auto;}
+}
+
+.modal-content {  
+  animation: zoom 0.7s forwards;
+  transition: transform .5s ease;
+}
+
+@keyframes zoom {
+  from {height: 0px;width: 0px;} 
+  to {height: auto;width:100%}
+}
+
+
+  .Graphics .first .left
+  {
+    
+  
+    width: 320px;
+
+  
+    height: 400px;
+}
+.Graphics .category
+{
+  
+padding-top: 3px;
+font-size: 20px;
+  
+}
+
+
+ 
+.Graphics .myImg /*ratio 2:1*/
+{
+  height: 60px;
+  width:120px;
+  position: relative;
+  left:0px;
+margin-right: 50%;
+
+  top:20px;
+  z-index: 5;
+  object-fit: cover;
+
+ 
+}
+
+ 
+.Graphics .myImg1  /*ratio 3:2*/
+{
+  height: 80px;
+  width:120px;
+left: 20%;
+top:-70px;
+}
+
+ 
+.Graphics .myImg2 /*ratio 3:4*/
+{
+
+  height: 120px;
+  width:90px;
+ top:18px;
+ left: 22px;
+ 
+}
+
+ 
+.Graphics .myImg3 /*ratio 5:3*/
+{
+  height: 90px;
+  width:150px;
+left:-20px;
+top:-120px;
+
+ 
+}
+
+ 
+.Graphics .myImg4/*ratio 1:1*/
+{
+  height: 120px;
+  width:120px;
+  position: relative;
+  bottom: 20%;
+ 
+
+ 
+}
+
+ 
+.Graphics .myImg5 /*ratio 4:3*/
+{
+  height: 90px;
+  width:120px;
+
+  left:0px;
+ 
+top: -130px;
+
+ 
+}
+
+ 
+.Graphics .myImg6 /*ratio 16:9*/
+{
+  height: 100px;
+  width:180px;
+  position: relative;
+  left:-20px;
+  top:-82px;
+  z-index: 5;
+  object-fit: cover;
+
+ 
+}
+
+ 
+.Graphics .myImg7 /*ratio 2:3*/
+{
+  height:95px;
+  width:70px;
+  position: relative;
+  left:170px;
+bottom: 0px;
+top: -400px;
+  z-index: 1;
+  object-fit: cover;
+
+ 
+}
+
+ 
+.Graphics .myImg8 /*ratio 3:5*/
+{
+  height: 100px;
+  width:60px;
+  position: relative;
+  left:-90px;
+ 
+  z-index: 5;
+  object-fit: cover;
+
+ 
+}
+.Graphics .myImg9/*ratio 1:2*/
+{
+  height: 120px;
+  width:60px;
+  position: relative;
+  left:50px;
+ 
+  z-index: 5;
+  object-fit: cover;
+
+ 
+}
+.closee {
+  position:absolute;
+  left:90%;
+  bottom:100%;
+  height: 25px;
+  width: 25px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.Graphics .graphicsocial
+{
+  height: 21px;
+  width: 21px;;
+}
+.Graphics .textgraphicstitle
+{
+  color: white;
+  font-size: 12px;
+  font-weight: 200;
+  width:100%;
+  padding: 1%;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+ 
+}
+.Graphics .textgraphicsdescription
+{
+  padding: 0px;
+  color:white;
+  font-size: 11px;
+  width: 100%;
+ line-height: 1.1;
+ padding-left: 4%;
+ padding-right:4%;
+  text-align: justify;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+}
+@media only screen and (max-width: 600px) and (min-width:200px){
+  .graphic{
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,12 @@
+#googleIcon {
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    width: 350px;
+    height: 80px;
+}
+#googleIcon img{
+    width: 1em;
+}
+#googleIcon span{
+    padding-left: 5px;
+}
