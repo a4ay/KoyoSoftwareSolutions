@@ -320,9 +320,7 @@
 }
 
 @media only screen and (max-width: 991px) {
-    #navbarNav {
-        background: transparent;
-    }
+
     #header {
         background: rgba(0, 0, 0, 0.6);
     }
@@ -332,6 +330,8 @@
     #navbarNav {
         overflow: scroll;
         overflow-x: hidden;
+        background: rgba(0,0,0,0.6)!important;
+        margin-top: -25px;
     }
     .nav-menu .drop-down > a:after {
         /* content: " "; */

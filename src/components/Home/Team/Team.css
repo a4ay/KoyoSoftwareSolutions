@@ -203,18 +203,18 @@
 .team .card-title {
   padding: 0px;
   font-size: 14px;
-  color: rgba(0,0,0);
+  color: rgba(20,20,20);
   
 }
 
 .team .card-subtitle {
   font-size: 13px;
-  color: rgb(63, 57, 57);
+  color: rgb(20,20,20);
   
 }
 .team .head{
   width: fit-content;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 }
 @media (min-width: 1500px) and (max-width: 2560px) {
   .team .card-title {

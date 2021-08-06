@@ -284,7 +284,7 @@ const Navbar1 = (props) => {
       </div>
 
       {/* mobile nav */}
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse" id="navbarNav" >
         <ul
           className="navbar-nav nav-menu"
           style={{ textAlign: "left", marginLeft: "15%" }}
@@ -297,6 +297,7 @@ const Navbar1 = (props) => {
               aria-controls="navbarNav"
               onClick={nav2Active}
             >
+              
               <Link className="nav-link secondNav" to="/">
                 {WebText.home.navbar.navItems.item1}
               </Link>

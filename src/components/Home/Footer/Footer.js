@@ -41,7 +41,8 @@ function Footer() {
 
           <div className="container">
             <div className="social-links">
-              Follow Us
+            <span style={{ fontSize: "16px" }}>Follow Us</span>
+ 
               {" "}
               <a href="https://www.facebook.com/KoyoSoft" target="_blank" className="facebook">
                 <i className="bx bxl-facebook"></i>
@@ -51,7 +52,8 @@ function Footer() {
                 <i className="bx bxl-linkedin"></i>
               </a>
               <br class="d-md-none"></br>
-              Contact Us
+              <span style={{ fontSize: "16px" }}>Contact us</span>
+
               <a href="tel:+919867910690" className="phone">
                 {" "}
                 <i className="bx bxs-phone"></i>

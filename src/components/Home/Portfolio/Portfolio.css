@@ -21,6 +21,16 @@
   margin: auto;
   margin-top: 50px;
 }
+.hiringtext1{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  color:#212529;
+  padding:2px;
+  text-align: justify;
+  padding-right: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
 .portfolio .app-container {
   background-color: transparent;
   width: 100%;

@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 100px 0;
   overflow: hidden;
 }
 
@@ -161,5 +161,14 @@ a {
     
     margin: 4px 2px;
     margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 300px){
+  .section-title h2::after {
+    width: 40px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }

@@ -54,7 +54,7 @@
 }
 .categorytwo .button.is-checked {
   transition: all 0.2s ease-in-out;
-  color: #ffc451;
+  color: #EE920D;
   border:transparent;
   /* padding: 2px 2px 2px 2px;
   margin-right: 35px; */
@@ -755,13 +755,13 @@ body {
   .application-container {
     width: 95%;
     margin: auto;
-    height: 650px;
+    height: 640px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .categorytwo .button.is-checked {
-    color: #ffc451;
+    color: #EE920D;
     border:transparent;
     /* padding: 2px 2px 2px 2px;
     margin-right: 35px; */
@@ -1180,13 +1180,12 @@ body {
   }
   
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) and (min-width:300px){
   .categorytwo button{
-    font-size: 10px;
+    
+    font-size: 12px !important;
   }
-  .seperate{
-    font-weight: 200;
-  }
+  
 }
 @media only screen and (max-width:468px) and (min-width:450px) {
   

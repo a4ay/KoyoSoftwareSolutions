@@ -114,6 +114,11 @@ function Portfolio() {
           <div style={{ paddingLeft: "7%" }} className="section-title">
             <h2>{WebText.home.portfolio.title}</h2>
             <p>{WebText.home.portfolio.description}</p>
+            <div className="hiringtext1">
+              KSS is hiring! We are interested in passionate candidates who can
+              bring their skills, creativity or experience and grow in a
+              problem-solving environment.See the details below.
+            </div>
           </div>
 
           <div className="row" data-aos="fade-up" data-aos-delay="100">
@@ -418,6 +423,7 @@ function Portfolio() {
             >
               {slideswebsite8}
             </Swiper>
+
           </div>
         </div>
       </section>

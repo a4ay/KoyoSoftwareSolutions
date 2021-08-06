@@ -141,6 +141,9 @@ const Navbar1 = (props) => {
     document.getElementById("navbarNav").style.display = "block";
     // setIsHideNav(false)
   };
+  // const handleDropdown=()=>{
+  //   document.getElementsByClassName(dropdown-menu).style.display="none";
+  // }
 
   const nav2Deactive = () =>{
     (document.getElementById("navbarNav").style.display = "none");
@@ -193,6 +196,7 @@ const Navbar1 = (props) => {
 
     setIsOpen33(true);
   }
+  const [modal4,setModal4]=useState(true)
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex justify-content-between">
@@ -262,7 +266,7 @@ const Navbar1 = (props) => {
             {WebText.home.navbar.navItems.item5}
           </HashLink>
           <a
-            style={{ marginTop: "-2px" }}
+            style={{ marginTop: "-2px",marginLeft:"20px" }}
             href="https://wa.me/919867910690"
             rel="noreferrer"
             target="_blank"
@@ -285,8 +289,10 @@ const Navbar1 = (props) => {
             ></i>
           </a>
         </div>
+
         {/* button */}
-        <p>
+        <nav>
+  
           {user.googleSignIn ? (
             <div>
               <Link
@@ -319,7 +325,7 @@ const Navbar1 = (props) => {
               {WebText.home.navbar.btn.signIn}
             </Link>
           )}
-        </p>
+        </nav>
       </div>
 
       {/* mobile nav */}
@@ -329,17 +335,10 @@ const Navbar1 = (props) => {
           style={{ textAlign: "left", marginLeft: "15%" }}
         >
           <li id="home" className="nav-item">
-            <button
-              className="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              
-            >
+          
               <Link className="nav-link secondNav" to="/">
                 {WebText.home.navbar.navItems.item1}
               </Link>
-            </button>
           </li>
           <li className="drop-down nav-item dropdown" id="secondNavServices">
             <Link
@@ -397,21 +396,14 @@ const Navbar1 = (props) => {
           </li>
 
           <li id="5" className="nav-item">
-            <button
-              className="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              onClick={nav2Deactive}
-            >
               <HashLink className="nav-link" smooth to="#contact">
                 {WebText.home.navbar.navItems.item5}
               </HashLink>
-            </button>
           </li>
         </ul>
       </div>
       <Modal
-        show={show}
+        
         onHide={handleModel}
         animation={true}
         className="d-flex align-items-center"
@@ -460,6 +452,7 @@ const Navbar1 = (props) => {
           </Modal.Body>
         )}
       </Modal>
+     
     </header>
   );
 };
