@@ -87,6 +87,7 @@ function ApplicationForm() {
   const [isOpen5, setOpen5] = useState(false);
 
   const [applicationDetails, setApplicationDetails] = useState({
+    jobID: "",
     applicantname: "",
     applicantemail: "",
     phone: "",
@@ -96,6 +97,7 @@ function ApplicationForm() {
     skill2: "",
     skill3: "",
     skill4: "",
+    skills: "",
     otherurl1: "",
     otherurl2: "",
     otherurl3: "",
@@ -128,7 +130,17 @@ function ApplicationForm() {
     setErr(ee);
     setErrEmail(ef);
     setApplicationDetails({ ...applicationDetails, [name]: value });
+    var s=applicationDetails
+    s[name]=value
+    localStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
   };
+
+  const handleSkills = (skills) => {
+    setApplicationDetails({...applicationDetails,'skills': skills});
+    var s=applicationDetails
+    s['skills']=skills
+    localStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
+  }
 
   const handleSubmit = (e) => {
     if (
@@ -161,6 +173,18 @@ function ApplicationForm() {
         available_inmonths: "",
       });
       console.log(records);
+      
+      // var projects=WebText.home.projects.projectListData;
+      // var formData=records[records.length-1]
+      // for(var z=0;z<projects.length;z++){
+      //   if(formData.projID===projects[z].id){
+      //     formData.projectTitle=projects[z].projecttitle;
+      //     formData.skillNames=projects[z].skills
+      //     formData.type=projects[z].filter
+      //     console.log(formData,projects[z].id)
+      //     break;
+      //   }
+      // }
     } else {
       console.log(applicationDetails.available_inhours + "in hours");
       if (
@@ -189,6 +213,64 @@ function ApplicationForm() {
   };
 
   function openModal2() {
+
+    setIsOpen1(false);
+    setIsOpen2(true);
+
+    setIsOpen3(false);
+    console.log(modalIsOpen2);
+    console.log("submitted");
+  }
+  function openForm(id){
+    var details=JSON.parse(localStorage.getItem(id))
+    if(details!==null){
+      setApplicationDetails({
+        jobID: details.jobID,
+        applicantname: details.applicantname,
+        applicantemail: details.applicantemail,
+        phone: details.phone,
+        available_inhours: details.available_inhours,
+        available_inmonths: details.available_inmonths,
+        skill1: details.skill1,
+        skill2: details.skill2,
+        skill3: details.skill3,
+        skill4: details.skill4,
+        skills: details.skills,
+        otherurl1: details.otherurl1,
+        otherurl2: details.otherurl2,
+        otherurl3: details.otherurl3,
+        otherurl4: details.otherurl4,
+        otherurl5: details.otherurl5,
+        CVFile: details.CVFile,
+      })
+    }
+    else{
+      setApplicationDetails({
+        jobID: id,
+        applicantname: "",
+        applicantemail: "",
+        phone: "",
+        available_inhours: "",
+        available_inmonths: "",
+        skill1: "",
+        skill2: "",
+        skill3: "",
+        skill4: "",
+        skills: "",
+        otherurl1: "",
+        otherurl2: "",
+        otherurl3: "",
+        otherurl4: "",
+        otherurl5: "",
+        CVFile: null,
+      })
+      var s=applicationDetails
+      s.jobID=id
+      localStorage.setItem(id,JSON.stringify(s))
+
+    }
+    
+    console.log(applicationDetails.skills)
     setIsOpen1(false);
     setIsOpen2(true);
 
@@ -260,7 +342,7 @@ function ApplicationForm() {
         >
           x
         </button>
-        <div className="md-stepper-horizontal yellow" style={{position:"sticky",top:"-25px"}}>
+        <div className="md-stepper-horizontal yellow">
           <div className="md-step ">
             <div className="md-step-circle" onClick={openModal2}>
               <span>1</span>
@@ -320,7 +402,7 @@ function ApplicationForm() {
         ></input>
         <br />
         <input
-          type="text "
+          type="text"
           name="otherurl4"
           className="form-control form-control-sm "
           id="otherurls4"
@@ -339,7 +421,7 @@ function ApplicationForm() {
           placeholder="Video URL"
         ></input>
         <br />
-        <InputSkills />
+        <InputSkills onAdd={handleSkills} skills={applicationDetails.skills}/>
         <br />
       </Modal>
 
@@ -745,9 +827,9 @@ function ApplicationForm() {
                         </div>
                       </div>
                       <div className="duration">
-                        <span style={{ color: "#ffc451",opacity:"0.6" }}> Duration</span> :{" "}
+                        <span style={{ color: "#ffc451" }}> Duration</span> :{" "}
                         {proj.duration}
-                        <span style={{ color: "#ffc451",opacity:"0.6" }}> Skills :</span>
+                        <span style={{ color: "#ffc451" }}> Skills :</span>
                         {proj.skills}
                       </div>
 
@@ -756,7 +838,7 @@ function ApplicationForm() {
                           <button
                             type="button"
                             className="btn btn-warning btn-sm"
-                            onClick={openModal2}
+                            onClick={()=>openForm(proj.id)}
                           >
                             Apply
                           </button>
