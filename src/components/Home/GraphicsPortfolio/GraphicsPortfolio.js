@@ -70,6 +70,11 @@ function GraphicsPortfolio() {
           <div className="graphic section-title">
             <h2>{WebText.home.graphicsportfolio.title}</h2>
             <p>{WebText.home.graphicsportfolio.description}</p>
+            <div className="hiringtext1">
+              KSS is hiring! We are interested in passionate candidates who can
+              bring their skills, creativity or experience and grow in a
+              problem-solving environment.See the details below.
+            </div>
           </div>
 
           <div className="desktopgraphics">

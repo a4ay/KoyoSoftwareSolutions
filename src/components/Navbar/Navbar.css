@@ -322,15 +322,15 @@
 @media only screen and (max-width: 991px) {
 
     #header {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
     }
     #header.header-scrolled, #header.header-inner-pages {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
     }
     #navbarNav {
         overflow: scroll;
         overflow-x: hidden;
-        background: rgba(0,0,0,0.6)!important;
+        background: rgba(0,0,0,0.8)!important;
         margin-top: -25px;
     }
     .nav-menu .drop-down > a:after {

@@ -109,7 +109,7 @@ function Portfolio() {
 
   return (
     <>
-      <section className="portfolio" id="webportfolio">
+      <section className="portfolio" id="webportfolio" style={{padding:"40px 0 100px 0px"}}>
         <div className="port-container" data-aos="fade-up">
           <div style={{ paddingLeft: "7%" }} className="section-title">
             <h2>{WebText.home.portfolio.title}</h2>
