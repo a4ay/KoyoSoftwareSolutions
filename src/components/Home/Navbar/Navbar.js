@@ -354,6 +354,7 @@ const Navbar1 = (props) => {
                 {WebText.home.navbar.navItems.item2.main}
               
               </span>
+
             </Link>
             <div
               className="dropdown-menu"
@@ -374,10 +375,10 @@ const Navbar1 = (props) => {
                 scroll={(el) => scrollWidthOffset(el)}>
                 {WebText.home.navbar.navItems.item2.item2}
               </HashLink>
-              <Link className="dropdown-item"  to="/e-marketing">
+              <Link className="dropdown-item"  to="#">
                 {WebText.home.navbar.navItems.item2.item3}
               </Link>
-              <Link className="dropdown-item" to="/businessPS">
+              <Link className="dropdown-item" to="#">
                 {WebText.home.navbar.navItems.item2.item4}
               </Link>
               <HashLink className="dropdown-item" smooth to="#brandingsols"

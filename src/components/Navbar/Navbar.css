@@ -125,12 +125,6 @@
     padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down > a:after {
-    content: "\eaa0";
-    font-family: IcoFont;
-    position: absolute;
-    right: 15px;
-}
 
 @media (max-width: 1366px) {
     .nav-menu .drop-down .drop-down ul {
@@ -139,9 +133,7 @@
     .nav-menu .drop-down .drop-down:hover > ul {
         left: -100%;
     }
-    .nav-menu .drop-down .drop-down > a:after {
-        content: "\ea9d";
-    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -236,17 +228,7 @@
     background: #ffc451;
 }
 
-.mobile-nav .drop-down > a:after {
-    content: "\ea99";
-    font-family: IcoFont;
-    padding-left: 10px;
-    position: absolute;
-    right: 15px;
-}
 
-.mobile-nav .active.drop-down > a:after {
-    content: "\eaa1";
-}
 
 .mobile-nav .drop-down > a {
     padding-right: 35px;
@@ -311,14 +293,6 @@
     margin: 4px 0;
 }
 
-@media only screen and (min-width: 991px) {
-    .nav-menu .drop-down > a:after {
-        content: "\ea99";
-        font-family: IcoFont;
-        padding-left: 5px;
-    }
-}
-
 @media only screen and (max-width: 991px) {
 
     #header {
@@ -333,9 +307,5 @@
         background: rgba(0,0,0,0.8)!important;
         margin-top: -25px;
     }
-    .nav-menu .drop-down > a:after {
-        /* content: " "; */
-        font-family: IcoFont;
-        padding-left: 5px;
-    }
+
 }
