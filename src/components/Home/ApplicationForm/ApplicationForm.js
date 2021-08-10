@@ -134,7 +134,13 @@ function ApplicationForm() {
     s[name]=value
     localStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
   };
-
+  const handleCV= (e)=>{
+    console.log(applicationDetails)
+    setApplicationDetails({...applicationDetails,CVFile: e.target.files[0]})
+    var s=applicationDetails
+    s['CVFile']=e.target.files[0]
+    localStorage.setItem(applicationDetails.jobID,JSON.stringify(s)) 
+  }
   const handleSkills = (skills) => {
     setApplicationDetails({...applicationDetails,'skills': skills});
     var s=applicationDetails
@@ -142,7 +148,7 @@ function ApplicationForm() {
     localStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
   }
 
-  const handleSubmit = (e) => {
+  async function handleSubmit(e){
     if (
       applicationDetails.applicantname !== "" &&
       applicationDetails.applicantemail !== "" &&
@@ -151,15 +157,15 @@ function ApplicationForm() {
     ) {
       e.preventDefault();
 
-      document.getElementById("exampleInputname2").style.backgroundColor =
-        "white";
-      document.getElementById("exampleInputEmail2").style.backgroundColor =
-        "white";
-      document.getElementById("selectboxhours").style.backgroundColor = "white";
-      document.getElementById("selectboxmonths").style.backgroundColor =
-        "white";
-      document.getElementById("CVFile").style.backgroundColor = "white";
-
+      // document.getElementById("exampleInputname2").style.backgroundColor =
+      //   "white";
+      // document.getElementById("exampleInputEmail2").style.backgroundColor =
+      //   "white";
+      // document.getElementById("selectboxhours").style.backgroundColor = "white";
+      // document.getElementById("selectboxmonths").style.backgroundColor =
+      //   "white";
+      // document.getElementById("CVFile").style.backgroundColor = "white";
+      var id=applicationDetails.jobID
       const newRecord = {
         ...applicationDetails,
         id: new Date().getTime().toString(),
@@ -172,19 +178,51 @@ function ApplicationForm() {
         available_inhours: "",
         available_inmonths: "",
       });
-      console.log(records);
       
-      // var projects=WebText.home.projects.projectListData;
-      // var formData=records[records.length-1]
-      // for(var z=0;z<projects.length;z++){
-      //   if(formData.projID===projects[z].id){
-      //     formData.projectTitle=projects[z].projecttitle;
-      //     formData.skillNames=projects[z].skills
-      //     formData.type=projects[z].filter
-      //     console.log(formData,projects[z].id)
-      //     break;
-      //   }
-      // }
+      var projects=WebText.home.projects.projectListData;
+      var formData=newRecord
+      let cv_url;
+      const data = new FormData()
+      data.append("file",formData.CVFile)
+      data.append("upload_preset", "koyosoftware")
+      data.append("cloud_name", "dpbzuwwto")
+      console.log(data)
+      await fetch(`https://api.cloudinary.com/v1_1/dpbzuwwto/image/upload`,{
+      method:"post",
+      body: data
+      })
+     .then(resp => resp.json())
+     .then(data => {
+       cv_url = data.url;
+     })
+     .catch(e=>{
+       console.log(e)
+     })
+
+      for(var z=0;z<projects.length;z++){
+        if(id==projects[z].appID){
+          formData.projectTitle=projects[z].projecttitle;
+          formData.skillNames=projects[z].skills
+          formData.type=projects[z].filter
+          formData.cv_url=cv_url
+          break;
+        }
+      }
+      console.log(formData)
+      const response = await fetch("https://dkr31m892d.execute-api.ap-south-1.amazonaws.com/prod/koyoSoftware", {
+            method: "POST",
+            headers: {
+            "Content-type": "application/json",
+            },
+            body: JSON.stringify(formData)
+        })
+            .then((res) => res.json())
+            .then(async (res) => {
+                const resData = await res;
+                console.log(resData);
+                console.log("hello")
+                })
+            .catch((err)=>console.log(err))
     } else {
       console.log(applicationDetails.available_inhours + "in hours");
       if (
@@ -480,8 +518,7 @@ function ApplicationForm() {
             name="CVFile"
             className="form-control-file border border-danger rounded"
             id="CVFile"
-            onChange={handleInput}
-            value={applicationDetails.CVFile}
+            onChange={handleCV}
           />
         </div>
         <div className="formerror" id="formerror">
@@ -493,7 +530,7 @@ function ApplicationForm() {
         <button
           type="submit"
           className="btn btn-warning btn-sm float-right"
-          onClick={handleSubmit}
+          onClick={(e)=>handleSubmit(e)}
         >
           Submit
         </button>
@@ -838,7 +875,7 @@ function ApplicationForm() {
                           <button
                             type="button"
                             className="btn btn-warning btn-sm"
-                            onClick={()=>openForm(proj.id)}
+                            onClick={()=>openForm(proj.appID)}
                           >
                             Apply
                           </button>
