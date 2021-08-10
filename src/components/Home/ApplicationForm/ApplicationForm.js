@@ -409,7 +409,10 @@ function ApplicationForm() {
         </div>
         Any Other Uploads
         <br />
-        <input
+        <br/>
+        <div className="form-row ">
+          <div className="col">
+          <input
           type="text"
           name="otherurl1"
           className="form-control form-control-sm  "
@@ -418,8 +421,9 @@ function ApplicationForm() {
           onChange={handleInput}
           placeholder="Portfolio URL"
         ></input>
-        <br />
-        <input
+          </div>
+          <div className="col">
+          <input
           type="text"
           name="otherurl2"
           className="form-control form-control-sm "
@@ -428,8 +432,11 @@ function ApplicationForm() {
           onChange={handleInput}
           placeholder="Project URL"
         ></input>
-        <br />
-        <input
+          </div>
+        </div>
+        <br/>
+        <div className="form-row">
+          <div className="col"><input
           type="text"
           name="otherurl3"
           className="form-control form-control-sm  "
@@ -437,9 +444,8 @@ function ApplicationForm() {
           value={applicationDetails.otherurl3}
           onChange={handleInput}
           placeholder="Website URL"
-        ></input>
-        <br />
-        <input
+        ></input></div>
+          <div className="col">        <input
           type="text"
           name="otherurl4"
           className="form-control form-control-sm "
@@ -447,9 +453,11 @@ function ApplicationForm() {
           value={applicationDetails.otherurl4}
           onChange={handleInput}
           placeholder="Photo URL"
-        ></input>
-        <br />
-        <input
+        ></input></div>
+        </div>
+        <br/>
+        <div className="form-row">
+          <div className="col"><input
           type="text"
           name="otherurl5"
           className="form-control form-control-sm  "
@@ -457,8 +465,13 @@ function ApplicationForm() {
           value={applicationDetails.otherurl5}
           onChange={handleInput}
           placeholder="Video URL"
-        ></input>
+        ></input></div>
+          <div className="col"></div>
+        </div>
+        
         <br />
+        
+
         <InputSkills onAdd={handleSkills} skills={applicationDetails.skills}/>
         <br />
       </Modal>
@@ -770,7 +783,7 @@ function ApplicationForm() {
         <br />
       </Modal>
 
-      <section className="portfolio" id="jobs">
+      <section className="portfolio" id="jobs" style={{padding:"40px 0 100px 0px"}}>
         <div className="application-container " data-aos="fade-up">
           <div className="section-title">
             <h2>Jobs/Internships</h2>

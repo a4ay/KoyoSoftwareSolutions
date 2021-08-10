@@ -408,11 +408,9 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    box-shadow: 10px 9px 5px 4px rgba(0,0,0,0.25);
--webkit-box-shadow: 10px 9px 5px 4px rgba(0,0,0,0.25);
--moz-box-shadow: 10px 9px 5px 4px rgba(0,0,0,0.25);
+
     border: transparent;
-    background-color: transparent;
+    background-color: none;
   }
   
   

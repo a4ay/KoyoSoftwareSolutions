@@ -47,7 +47,7 @@
 }
 
 #hero .icon-box {
-  padding: 30px 20px;
+  padding: 1rem 2%;
   transition: ease-in-out 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
@@ -116,13 +116,20 @@ img
 }
 
 @media (max-width: 480px) {
-
+  #hero .container {
+    position: relative;
+    padding-top: 0px;
+    text-align: center;
+   
+  }
 
   #hero {
     
-    background: url("../../../img/hero-bg-mob.png") top center;
-  
-    background-size:inherit;
+    background: url("../../../img/hero-bg-mob.png") no-repeat;  
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
+
   
   }
 
