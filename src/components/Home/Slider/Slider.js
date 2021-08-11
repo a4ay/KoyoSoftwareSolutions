@@ -85,8 +85,6 @@ function Slider() {
         <Swiper
           data-aos="fade-up"
           className="box"
-
-
           autoplay={{ delay: 4000 }}
           id="main"
           thumbs={{ swiper: thumbsSwiper }}

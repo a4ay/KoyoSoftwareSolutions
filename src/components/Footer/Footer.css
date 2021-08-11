@@ -107,7 +107,7 @@
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #46423b;
+  background: rgb(81,63,0);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -178,7 +178,7 @@
   #footer .social-links a {
     font-size: 22px;
     display: inline-block;
-    background: #46423b;
+    background: rgb(81,63,0);
     color: #fff;
     line-height: 1;
     padding: 2px;

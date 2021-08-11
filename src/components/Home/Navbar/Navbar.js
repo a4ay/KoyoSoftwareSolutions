@@ -369,7 +369,7 @@ const Navbar1 = (props) => {
                 style={{ textAlign: "left" }}
                 onClick={nav2Deactive}
               ></button>
-           
+
               <HashLink className="dropdown-item" 
               smooth to="#webportfolio"
                 scroll={(el) => scrollWidthOffset(el)}>
