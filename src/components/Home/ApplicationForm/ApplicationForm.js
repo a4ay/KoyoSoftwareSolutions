@@ -149,6 +149,8 @@ function ApplicationForm() {
   }
 
   async function handleSubmit(e){
+    setIsOpen3(false);
+    setErr("");
     if (
       applicationDetails.applicantname !== "" &&
       applicationDetails.applicantemail !== "" &&
@@ -220,7 +222,6 @@ function ApplicationForm() {
             .then(async (res) => {
                 const resData = await res;
                 console.log(resData);
-                console.log("hello")
                 })
             .catch((err)=>console.log(err))
     } else {
@@ -543,7 +544,7 @@ function ApplicationForm() {
         <button
           type="submit"
           className="btn btn-warning btn-sm float-right"
-          onClick={(e)=>handleSubmit(e)}
+          onClick={e=>handleSubmit(e)}
         >
           Submit
         </button>
