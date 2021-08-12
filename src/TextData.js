@@ -245,7 +245,7 @@ if (WebsiteText === null) {
 
       featuresListData: [
         {
-          classDiv: "",
+          classDiv: {marginTop:"90px"},
           icon: "bx-receipt",
           title: "Web Design",
           description:
