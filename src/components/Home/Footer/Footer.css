@@ -69,7 +69,7 @@
 #footerpage .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #46423b;
+  background: red;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -140,7 +140,7 @@
   #footerpage .social-links a {
     font-size: 22px;
     display: inline-block;
-    background: #46423b;
+    background: red;
     color: #fff;
     line-height: 1;
     padding: 2px;

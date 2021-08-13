@@ -109,7 +109,7 @@ function Portfolio() {
 
   return (
     <>
-      <section className="portfolio" id="webportfolio" style={{padding:"60px 0 100px 0px"}}>
+      <section className="portfolio" id="webportfolio" >
         <div className="port-container" data-aos="fade-up">
           <div style={{ paddingLeft: "7%" }} className="section-title">
             <h2>{WebText.home.portfolio.title}</h2>
@@ -183,6 +183,7 @@ function Portfolio() {
                           height: "100%",
                           width: "100%",
                           borderRadius: "8px",
+                          
                         }}
                         alt=""
                       />
@@ -217,18 +218,17 @@ function Portfolio() {
                           {port.hosting}
                           <br />
                           <b>Find Out More:</b>
-                          <img
-                            className="contactpic"
-                            src={WhatsApp}
-                            alt=""
-                          />{" "}
-                          <img className="contactpic" src={Email} alt="" />{" "}
-                          <img
-                            className="contactpic"
-                            src={Call}
-                            class="img-fluid"
-                            alt=""
-                          />
+                          <a href=" https://api.whatsapp.com/send/?phone=+91 98679 10690&text&app_absent=0" target="_blank">
+
+                          <i class="bi bi-whatsapp" style={{color: "#EE920D",fontSize:"16px",marginLeft:"10px",marginTop:"3px" }}></i>
+                          </a>
+                          <a href=" https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=KoyoSoftwareSolutions@gmail.com#">
+                          <i class="bi bi-envelope" style={{color: "#EE920D",fontSize:"16px",marginLeft:"10px" }}></i>
+                          </a>
+                          <a href="tel:+919867910690" target="_blank">
+                          <i class="bi bi-telephone" style={{color: "#EE920D",fontSize:"16px",marginLeft:"10px" }}></i>
+                          </a>
+
                         </div>
                       </p>
                       <img
@@ -236,7 +236,7 @@ function Portfolio() {
                         style={{
                           height: "100%",
                           width: "100%",
-                          opacity: "0.3",
+                          opacity: "0.15",
                           borderRadius: "8px",
                         }}
                         alt=""

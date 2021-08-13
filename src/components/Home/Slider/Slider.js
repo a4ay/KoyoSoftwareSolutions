@@ -40,7 +40,7 @@ function Slider() {
 
 
 
-        <div className=" sliderheading" >{WebText.home.featuresListData[i].title}</div>
+        <div className=" sliderheading" styles={WebText.home.featuresListData[i].classDiv}>{WebText.home.featuresListData[i].title}</div>
         <div className="wrapper">
 
           <div id="column1" >
@@ -85,8 +85,6 @@ function Slider() {
         <Swiper
           data-aos="fade-up"
           className="box"
-
-
           autoplay={{ delay: 4000 }}
           id="main"
           thumbs={{ swiper: thumbsSwiper }}

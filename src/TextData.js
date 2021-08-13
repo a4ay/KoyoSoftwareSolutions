@@ -245,7 +245,7 @@ if (WebsiteText === null) {
 
       featuresListData: [
         {
-          classDiv: "mt-lg-0",
+          classDiv: {marginTop:"90px"},
           icon: "bx-receipt",
           title: "Web Design",
           description:
@@ -255,7 +255,7 @@ if (WebsiteText === null) {
           imgmob: WebDesignMob,
         },
         {
-          classDiv: "",
+          classDiv: "mt-lg-0",
           icon: "bx-cube-alt",
           title: "AI ML",
           description:
