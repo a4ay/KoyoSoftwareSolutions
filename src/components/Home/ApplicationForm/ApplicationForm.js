@@ -124,22 +124,33 @@ function ApplicationForm() {
     ) {
       ef = "Please enter a valid email";
     }
-    if (name === "in_hours") {
+    if (name === "available_inhours") {
       console.log("in hours we need" + value);
     }
     setErr(ee);
     setErrEmail(ef);
     setApplicationDetails({ ...applicationDetails, [name]: value });
-    var s=applicationDetails
-    s[name]=value
-    localStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
+    
+    if(name==="available_inhours" || name==="available_inmonths"){
+      var s=JSON.parse(sessionStorage.getItem(applicationDetails.jobID))
+      s[name]=value
+      sessionStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
+    }
+    else{
+      var s=JSON.parse(localStorage.getItem(applicationDetails.jobID))
+      s[name]=value
+      localStorage.setItem(applicationDetails.jobID,JSON.stringify(s))
+    }
   };
   const handleCV= (e)=>{
     console.log(applicationDetails)
-    setApplicationDetails({...applicationDetails,CVFile: e.target.files[0]})
-    var s=applicationDetails
-    s['CVFile']=e.target.files[0]
-    localStorage.setItem(applicationDetails.jobID,JSON.stringify(s)) 
+    if(e.target.files[0].size>2097152){
+      alert('give file size less than 2MB')
+      setApplicationDetails({...applicationDetails,CVFile: null})
+    }
+    else{
+      setApplicationDetails({...applicationDetails,CVFile: e.target.files[0]})
+    }
   }
   const handleSkills = (skills) => {
     setApplicationDetails({...applicationDetails,'skills': skills});
@@ -149,16 +160,14 @@ function ApplicationForm() {
   }
 
   async function handleSubmit(e){
-    setIsOpen3(false);
-    setErr("");
     if (
       applicationDetails.applicantname !== "" &&
       applicationDetails.applicantemail !== "" &&
       applicationDetails.available_inhours !== "" &&
-      applicationDetails.available_inmonths !== ""
+      applicationDetails.available_inmonths !== ""&&
+      applicationDetails.CVFile!==null
     ) {
       e.preventDefault();
-
       // document.getElementById("exampleInputname2").style.backgroundColor =
       //   "white";
       // document.getElementById("exampleInputEmail2").style.backgroundColor =
@@ -224,8 +233,10 @@ function ApplicationForm() {
                 console.log(resData);
                 })
             .catch((err)=>console.log(err))
-    } else {
-      console.log(applicationDetails.available_inhours + "in hours");
+            setIsOpen3(false);
+            setErr("");
+    }
+    else {
       if (
         applicationDetails.applicantname === "" ||
         applicationDetails.applicantemail === "" ||
@@ -238,19 +249,31 @@ function ApplicationForm() {
         applicationDetails.CVFile === null
       ) {
         document.getElementById("formerror").style.visibility = "visible";
+        openform1_blink()
       }
-
-      setApplicationDetails({
-        applicantname: "",
-        applicantemail: "",
-        phone: "",
-        available_inhours: "",
-        available_inmonths: "",
-      });
-      e.preventDefault();
     }
   };
 
+  function openform1_blink(){
+    setIsOpen2(true);
+    setIsOpen1(false);
+    setIsOpen3(false);
+    blink()
+  }
+  var t=null
+  function blink() {
+    document.getElementById("exampleInputname2").classList.add("highlight-item")
+    setTimeout(()=>{
+      document.getElementById("exampleInputname2").classList.remove("highlight-item")
+    },3000)
+    // obj.style.backgroundColor="#FF0000";
+    // t = setTimeout(function () {
+    //     obj.style.backgroundColor="#F0F0F0"
+    //     t = setTimeout(function () {
+    //         blink();
+    //     }, 500);
+    // }, 500);
+  }
   function openModal2() {
 
     setIsOpen1(false);
@@ -262,14 +285,14 @@ function ApplicationForm() {
   }
   function openForm(id){
     var details=JSON.parse(localStorage.getItem(id))
-    if(details!==null){
+    var details1=JSON.parse(sessionStorage.getItem(id))
+    if(details!==null && details1!=null){
       setApplicationDetails({
         jobID: details.jobID,
         applicantname: details.applicantname,
         applicantemail: details.applicantemail,
-        phone: details.phone,
-        available_inhours: details.available_inhours,
-        available_inmonths: details.available_inmonths,
+        available_inhours: details1.available_inhours,
+        available_inmonths: details1.available_inmonths,
         skill1: details.skill1,
         skill2: details.skill2,
         skill3: details.skill3,
@@ -283,12 +306,32 @@ function ApplicationForm() {
         CVFile: details.CVFile,
       })
     }
+    else if(details!=null && details1===null){
+      setApplicationDetails({
+        jobID: details.jobID,
+        applicantname: details.applicantname,
+        applicantemail: details.applicantemail,
+        available_inhours: "",
+        available_inmonths: "",
+        skill1: details.skill1,
+        skill2: details.skill2,
+        skill3: details.skill3,
+        skill4: details.skill4,
+        skills: details.skills,
+        otherurl1: details.otherurl1,
+        otherurl2: details.otherurl2,
+        otherurl3: details.otherurl3,
+        otherurl4: details.otherurl4,
+        otherurl5: details.otherurl5,
+        CVFile: details.CVFile,
+      })  
+      sessionStorage.setItem(details.jobId,JSON.stringify({available_inhours: "",available_inmonths: ""}))
+    }
     else{
       setApplicationDetails({
         jobID: id,
         applicantname: "",
         applicantemail: "",
-        phone: "",
         available_inhours: "",
         available_inmonths: "",
         skill1: "",
@@ -305,8 +348,10 @@ function ApplicationForm() {
       })
       var s=applicationDetails
       s.jobID=id
+      delete s['available_inhours']
+      delete s['available_inmonths']
       localStorage.setItem(id,JSON.stringify(s))
-
+      sessionStorage.setItem(id,JSON.stringify({available_inhours: "",available_inmonths: ""}))
     }
     
     console.log(applicationDetails.skills)
@@ -526,13 +571,16 @@ function ApplicationForm() {
           <span style={{ color: "red" }}> * </span>
         </div>
         <br />
-        <div className="form-group">
+        <div className="form-group cv-input">
+        <p>{applicationDetails.CVFile==null?"Upload CV*, pdf/doc/docx, max 2 MB":applicationDetails.CVFile.name}</p>
           <input
             type="file"
             name="CVFile"
             className="form-control-file border border-danger rounded"
             id="CVFile"
+            accept=".pdf,.doc,.docx"
             onChange={handleCV}
+            required
           />
         </div>
         <div className="formerror" id="formerror">
@@ -544,6 +592,7 @@ function ApplicationForm() {
         <button
           type="submit"
           className="btn btn-warning btn-sm float-right"
+          // disabled={(applicationDetails.applicantname===""||applicationDetails.applicantemail===""||applicationDetails.available_inhours===""||applicationDetails.available_inmonths===""||applicationDetails.skill1===""||applicationDetails.skill2===""||applicationDetails.skill3===""||applicationDetails.skill4===""||applicationDetails.CVFile==null)}
           onClick={e=>handleSubmit(e)}
         >
           Submit
@@ -616,6 +665,7 @@ function ApplicationForm() {
                   placeholder="Name*"
                   value={applicationDetails.applicantname}
                   onChange={handleInput}
+                  required
                 />
               </div>
             </div>
@@ -656,7 +706,7 @@ function ApplicationForm() {
                   <option value="15">15 Hr/Week</option>
                   <option value="20">20 Hr/Week</option>
                   <option value="30">30 Hr/Week</option>
-                  <option value="5">Full Time</option>
+                  <option value="Full Time">Full Time</option>
                 </select>
               </div>
             </div>
@@ -680,7 +730,7 @@ function ApplicationForm() {
                   <option value="4">4 Month</option>
                   <option value="5">6 Month</option>
                   <option value="6">9 Month</option>
-                  <option value="7">Full Time</option>
+                  <option value="Full Time">Full Time</option>
                 </select>
               </div>
             </div>
