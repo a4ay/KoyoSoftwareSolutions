@@ -108,7 +108,26 @@ function ApplicationForm() {
   const [records, setRecords] = useState([]);
   const [err, setErr] = useState("");
   const [errEmail, setErrEmail] = useState("");
-
+  const [nameBlink,setNameBlink]=useState(false);
+  const [blinks,setBlinks]=useState({
+    name: false,
+    email: false,
+    availability: false,
+    period: false,
+    skill1: false,
+    skill2: false,
+    skill3: false,
+    skill4: false,
+    CVFile: false
+  })
+  // const [emailBlink,setEmailBlink]=useState(false);
+  // const [availBlink,setAvailBlink]=useState(false);
+  // const [periodBlink,setPeriodBlink]=useState(false);
+  // const [skill1Blink,setSkill1Blink]=useState(false);
+  // const [skill2Blink,setSkill2Blink]=useState(false);
+  // const [skill3Blink,setSkill3Blink]=useState(false);
+  // const [skill4Blink,setSkill4Blink]=useState(false);
+  // const [CVBlink,setCVBlink]=useState(false);
   //second modal
   const handleInput = (e) => {
     const name = e.target.name;
@@ -165,7 +184,11 @@ function ApplicationForm() {
       applicationDetails.applicantemail !== "" &&
       applicationDetails.available_inhours !== "" &&
       applicationDetails.available_inmonths !== ""&&
-      applicationDetails.CVFile!==null
+      applicationDetails.CVFile!==null&&
+      applicationDetails.skill1!==""&&
+      applicationDetails.skill2!==""&&
+      applicationDetails.skill3!==""&&
+      applicationDetails.skill4!==""
     ) {
       e.preventDefault();
       // document.getElementById("exampleInputname2").style.backgroundColor =
@@ -245,34 +268,46 @@ function ApplicationForm() {
         applicationDetails.skill1 === "" ||
         applicationDetails.skill2 === "" ||
         applicationDetails.skill3 === "" ||
-        applicationDetails.skill4 === "" ||
-        applicationDetails.CVFile === null
+        applicationDetails.skill4 === "" 
       ) {
+        console.log(applicationDetails.applicantname === "" ||
+        applicationDetails.applicantemail === "" ||
+        applicationDetails.available_inhours === "" ||
+        applicationDetails.available_inmonths === "" ||
+        applicationDetails.skill1 === "" ||
+        applicationDetails.skill2 === "" ||
+        applicationDetails.skill3 === "" ||
+        applicationDetails.skill4 === "" )
+        var blinkobj={
+          name: applicationDetails.applicantname==="",
+          email: applicationDetails.applicantemail==="",
+          availability: applicationDetails.available_inhours==="",
+          period: applicationDetails.available_inmonths==="",
+          skill1: applicationDetails.skill1==="",
+          skill2: applicationDetails.skill2==="",
+          skill3: applicationDetails.skill3==="",
+          skill4: applicationDetails.skill4==="",
+          CVFile: false
+        }
+        openform1_blink(blinkobj)
+      }
+      else{
         document.getElementById("formerror").style.visibility = "visible";
-        openform1_blink()
+        setBlinks((prev)=>{
+          return {
+            ...prev,
+            CVfile: true
+            }
+        })
       }
     }
   };
 
-  function openform1_blink(){
+  function openform1_blink(blinkobj){
     setIsOpen2(true);
     setIsOpen1(false);
     setIsOpen3(false);
-    blink()
-  }
-  var t=null
-  function blink() {
-    document.getElementById("exampleInputname2").classList.add("highlight-item")
-    setTimeout(()=>{
-      document.getElementById("exampleInputname2").classList.remove("highlight-item")
-    },3000)
-    // obj.style.backgroundColor="#FF0000";
-    // t = setTimeout(function () {
-    //     obj.style.backgroundColor="#F0F0F0"
-    //     t = setTimeout(function () {
-    //         blink();
-    //     }, 500);
-    // }, 500);
+    setBlinks(blinkobj);
   }
   function openModal2() {
 
@@ -284,6 +319,18 @@ function ApplicationForm() {
     console.log("submitted");
   }
   function openForm(id){
+    setBlinks({
+      name: false,
+      email: false,
+      availability: false,
+      period: false,
+      skill1: false,
+      skill2: false,
+      skill3: false,
+      skill4: false,
+      CVFile: false
+    })
+    setErrEmail("")
     var details=JSON.parse(localStorage.getItem(id))
     var details1=JSON.parse(sessionStorage.getItem(id))
     if(details!==null && details1!=null){
@@ -585,7 +632,7 @@ function ApplicationForm() {
         </div>
         <div className="formerror" id="formerror">
           <span style={{ color: "red" }}>
-            Please fill all the required* details
+            Please fill the CV
           </span>
         </div>
         <br />
@@ -660,7 +707,7 @@ function ApplicationForm() {
                 <input
                   type="text"
                   name="applicantname"
-                  className="form-control form-control-sm border border-danger"
+                  className={(applicationDetails.applicantname===""&&blinks.name==true)?"form-control form-control-sm border border-danger highlight-item":"form-control form-control-sm border border-danger"}
                   id="exampleInputname2"
                   placeholder="Name*"
                   value={applicationDetails.applicantname}
@@ -675,7 +722,7 @@ function ApplicationForm() {
                 <input
                   type="email"
                   name="applicantemail"
-                  className="form-control form-control-sm border border-danger"
+                  className={(applicationDetails.applicantemail===""&&blinks.email==true)?"form-control form-control-sm border border-danger highlight-item":"form-control form-control-sm border border-danger"}
                   id="exampleInputEmail2"
                   placeholder="Email ID*"
                   onChange={handleInput}
@@ -693,7 +740,7 @@ function ApplicationForm() {
               <div className="form-group w-100 p-0">
                 <select
                   name="available_inhours"
-                  className=" form-control form-control-sm selectpicker form-control border border-danger"
+                  className={(applicationDetails.available_inhours===""&&blinks.availability==true)?"form-control form-control-sm border border-danger highlight-item selectpicker":"form-control form-control-sm border border-danger selectpicker"}
                   id="selectboxhours"
                   onChange={handleInput}
                   value={applicationDetails.available_inhours}
@@ -715,7 +762,7 @@ function ApplicationForm() {
               <div className="form-group w-100 p-0">
                 <select
                   name="available_inmonths"
-                  className="selectpicker form-control-sm form-control  border border-danger"
+                  className={(applicationDetails.available_inmonths===""&&blinks.period==true)?"form-control form-control-sm border border-danger highlight-item selectpicker":"form-control form-control-sm border border-danger selectpicker"}
                   id="selectboxmonths"
                   value={applicationDetails.available_inmonths}
                   onChange={handleInput}
@@ -746,7 +793,7 @@ function ApplicationForm() {
           <div className="form-group w-50 p-0">
             <select
               name="skill1"
-              className=" form-control form-control-sm selectpicker form-control border border-danger"
+              className={(applicationDetails.skill1===""&&blinks.skill1==true)?"form-control form-control-sm border border-danger highlight-item selectpicker":"form-control form-control-sm border border-danger selectpicker"}
               value={applicationDetails.skill1}
               onChange={handleInput}
               data-width="200px"
@@ -768,7 +815,7 @@ function ApplicationForm() {
           <div className="form-group w-50 p-0">
             <select
               name="skill2"
-              className=" form-control form-control-sm selectpicker form-control border border-danger"
+              className={(applicationDetails.skill2===""&&blinks.skill2==true)?"form-control form-control-sm border border-danger highlight-item selectpicker":"form-control form-control-sm border border-danger selectpicker"}
               value={applicationDetails.skill2}
               onChange={handleInput}
               data-width="200px"
@@ -790,7 +837,7 @@ function ApplicationForm() {
           <div className="form-group w-50 p-0">
             <select
               name="skill3"
-              className=" form-control form-control-sm selectpicker form-control border border-danger"
+              className={(applicationDetails.skill3===""&&blinks.skill3==true)?"form-control form-control-sm border border-danger highlight-item selectpicker":"form-control form-control-sm border border-danger selectpicker"}
               value={applicationDetails.skill3}
               onChange={handleInput}
               data-width="200px"
@@ -812,7 +859,7 @@ function ApplicationForm() {
           <div className="form-group w-50 p-0">
             <select
               name="skill4"
-              className=" form-control form-control-sm selectpicker form-control border border-danger"
+              className={(applicationDetails.skill4===""&&blinks.skill4==true)?"form-control form-control-sm border border-danger highlight-item selectpicker":"form-control form-control-sm border border-danger selectpicker"}
               value={applicationDetails.skill4}
               onChange={handleInput}
               data-width="200px"
