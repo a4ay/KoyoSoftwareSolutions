@@ -52,7 +52,6 @@ function AdminDashboardLogin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [email, setEmail] = useState('')
   let history = useHistory();
-  console.log(isLoggedIn, email)
   
   const onsubmit = e => {
       e.preventDefault()

@@ -5,40 +5,46 @@
 --------------------------------------------------------------*/
 
 .portfoliomobileslides {
-  background-color: aqua;
-  width: 100%;
+    background-color: aqua;
+    width: 100%;
 }
 
 .mobileportfolio {
-  display: none;
+    display: none;
 }
 
 .desktopportfolio {
-  display: block;
+    display: block;
 }
+
 .port-container {
-  width: 85%;
-  margin: auto;
-  margin-top: 50px;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
 }
-.hiringtext1{
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 23px;
-  color:#212529;
-  padding:2px;
-  text-align: justify;
-  padding-right: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+
+.hiringtext1 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #212529;
+    padding: 2px;
+    text-align: justify;
+    padding-right: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
 }
+
 .portfolio .app-container {
-  background-color: transparent;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  position: relative;
-  align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    align-items: center;
 }
+
+
 /* .portfolio .app-item{
   width: 330px;
  height: 201px; 
@@ -49,326 +55,68 @@
  border-radius: 8px;
  
    } */
+
 .portfolio .app-item {
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  width: 440px;
-  height: 225px;
-  margin-right: 5px;
-  margin-left: 0px;
-  margin-bottom: 100px;
-  border-radius: 8px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 440px;
+    height: 225px;
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+    border-radius: 8px;
 }
 
 #flip-card #downn img {
-  height: 25px;
-  width: 25px;
+    height: 25px;
+    width: 25px;
 }
+
 #flip-card .flip-card-3D-wrapper {
-  width: 60%;
-  height: 80%;
-  max-width: 300px;
-  max-height: 500px;
-  position: relative;
-  -o-perspective: 900px;
-  -webkit-perspective: 900px;
-  -ms-perspective: 900px;
-  perspective: 900px;
-  margin: 0 auto;
-  border-radius: 8px;
+    width: 60%;
+    height: 80%;
+    max-width: 300px;
+    max-height: 500px;
+    position: relative;
+    -o-perspective: 900px;
+    -webkit-perspective: 900px;
+    -ms-perspective: 900px;
+    perspective: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 #flip-card button :hover {
-  background-color: rgba(252, 186, 3, 0.4);
-  border: none;
-  height: 38px;
-  width: 38px;
-  border-radius: 50%;
-  z-index: 100;
-  margin-bottom: 0px;
+    background-color: rgba(252, 186, 3, 0.4);
+    border: none;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    z-index: 100;
+    margin-bottom: 0px;
 }
+
 #flip-card img {
-  height: 27px;
-  width: 27px;
+    height: 27px;
+    width: 27px;
 }
 
 #flip-card img :hover {
-  height: 27px;
-  width: 27px;
+    height: 27px;
+    width: 27px;
 }
+
 #flip-card {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  position: relative;
-  background-color:transparent;
-  margin-top: 3%;
-  margin-left: 7%;
-  font-weight:600;
-
-  border-radius: 8px;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -o-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.do-flip {
-  -o-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-#flip-card-btn-turn-to-back,
-#flip-card-btn-turn-to-front {
-  position: absolute;
-  bottom: 5px;
-  right: 8px;
-  width: 36px;
-  height: 36px;
-  background: transparent;
-  cursor: pointer;
-  visibility: hidden;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 0.7em;
-  padding: 0;
-
-  background-color: rgba(252, 186, 3, 0.3);
-
-  border: none;
-
-  border-radius: 50%;
-  z-index: 9999;
-  margin-bottom: 0px;
-}
-
-#flip-btn-load1 {
-  position: absolute;
-  left: 85%;
-  bottom: 75%;
-  height: 29px;
-  width: 50px;
-  background-color: rgba(146, 135, 105, 0.4);
-  font-size: 16px;
-  padding: 0px;
-  font-weight: 500;
-  color: white;
-  animation: color-change 2s infinite;
-}
-
-@keyframes color-change {
-  0% {
-    color: white;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: white;
-  }
-}
-
-#flip-btn-load1:hover {
-  color: rgba(170, 170, 170);
-}
-
-#flip-card .flip-card-front,
-#flip-card .flip-card-back {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  position: absolute;
-  -o-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 2;
-
-  border-radius: 8px;
-}
-#flip-card .flip-card-front {
-  background: transparent;
-}
-#flip-card .flip-card-back {
-  -o-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-#flip-card .flip-card-front p,
-#flip-card .flip-card-back p {
-  margin: auto;
-  margin: 5%;
-  padding-right: 2%;
-  color: transparent;
-  display: block;
-  position: absolute;
-  width: 90%;
-  height: 86%;
-  overflow: auto;
-  text-align: justify;
-  font-size: 12px;
-  scroll-behavior: smooth;
-  font-family: "Rubik", sans-serif;
-  color: black;
-  background-color: transparent;
-  z-index: 10;
-}
-
-#flip-card .flip-card-back p::-webkit-scrollbar {
-  width: 7px;
-  height: 50px;
-  background: linear-gradient(#feeab3, transparent);
-  border-radius: 8px;
-}
-
-#flip-card .flip-card-back p::-webkit-scrollbar-thumb {
-  background: linear-gradient(#e3a702, transparent);
-  border-radius: 8px;
-  border: 1px solid #e3a702;
-}
-
-.flip-card-front iframe::-webkit-scrollbar {
-  width: 0px;
-}
-
-#flip-card .flip-card-back .out {
-  margin: 10px;
-  width: 340px;
-  height: 221px;
-  overflow: auto;
-  position: relative;
-
-}
-.portfolio img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio .app-item {
-  margin-bottom: 2%;
-}
-.portfolio #app-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio #app-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.6s ease-in-out;
-  border-radius: 3px;
-  
-}
-.portfolio #app-flters li:hover {
-  color: rgba(255, 94, 19);
-  background-color: transparent;
-}
-.portfolio #app-flters li.filter-activee {
-  color: #151515;
-  background: #ffc451;
-}
-
-.portfolio #app-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: black;
-  font-weight: 600;
-}
-#webportfolio{
-  padding:60px 0px 100px 0px
-}
-
-@media only screen and (max-width: 600px) {
-  #webportfolio{
-    padding:60px 0px 180px 0px;
-    margin:0px
-  }
-  .portfolio #app-flters {
-    padding: 10px;
-    margin: 0px auto 0px auto;
-    list-style: none;
-    text-align: center;
-  }
-
-  .portfolio #app-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 2%;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #444444;
-    margin-bottom: 0px;
-    transition: all 0.6s ease-in-out;
-    border-radius: 3px;
-  }
-  .portfolio #app-flters li:hover {
-    color: rgba(255, 94, 19);
-    background-color: transparent;
-  }
-  .portfolio #app-flters li.filter-activee {
-    color: #151515;
-    background: #ffc451;
-  }
-
-  .portfolio #app-flters li:last-child {
-    margin-right: 0;
-  }
-
-  .mobileportfolio {
-    display: block;
-  }
-
-  .desktopportfolio {
-    display: none;
-  }
-
-  #flip-btn-load1 {
-    position: absolute;
-    left: 83%;
-    bottom: 80%;
-    height: 29px;
-    width: 50px;
-    background-color: rgba(146, 135, 105, 0.4);
-    font-size: 16px;
-    padding: 0px;
-    font-weight: 500;
-    color: white;
-    animation: color-change 2s infinite;
-    z-index: 9999;
-  }
-
-  #flip-card {
     width: 100%;
     height: 100%;
     text-align: center;
     position: relative;
     background-color: transparent;
-    margin: auto;
-    padding: 0;
-    margin-left: -2.5%;
-    border-radius: 0px;
+    margin-top: 3%;
+    margin-left: 7%;
+    font-weight: 600;
+    border-radius: 8px;
     -o-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
@@ -377,52 +125,304 @@
     -webkit-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
-  }
-  .port-container {
+}
+
+.do-flip {
+    -o-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+#flip-card-btn-turn-to-back,
+#flip-card-btn-turn-to-front {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    cursor: pointer;
+    visibility: hidden;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.7em;
+    padding: 0;
+    background-color: rgba(252, 186, 3, 0.3);
+    border: none;
+    border-radius: 50%;
+    z-index: 9999;
+    margin-bottom: 0px;
+}
+
+#flip-btn-load1 {
+    position: absolute;
+    left: 85%;
+    bottom: 75%;
+    height: 29px;
+    width: 50px;
+    background-color: rgba(146, 135, 105, 0.4);
+    font-size: 16px;
+    padding: 0px;
+    font-weight: 500;
+    color: white;
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}
+
+#flip-btn-load1:hover {
+    color: rgba(170, 170, 170);
+}
+
+#flip-card .flip-card-front,
+#flip-card .flip-card-back {
     width: 100%;
-    height: 350px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    -o-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+#flip-card .flip-card-front {
+    background: transparent;
+}
+
+#flip-card .flip-card-back {
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#flip-card .flip-card-front p,
+#flip-card .flip-card-back p {
     margin: auto;
-    padding: 0;
-    margin-bottom: -30px;
-    margin-top:15px;
-    
-  }
-  .mobileportfolio .swiper-slide {
-    width: 100%;
-    transform: translateY(-3px);
-    height: 220px;
+    margin: 5%;
+    padding-right: 2%;
+    color: transparent;
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 86%;
+    overflow: auto;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 200;
+    scroll-behavior: smooth;
+    font-family: "Rubik", sans-serif;
+    color: black;
     background-color: transparent;
-  }
-
-  .mobileportfolio .websiteslider {
-    height: 200px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color:transparent;
-  }
-  .mobileportfolio .swiper-wrapper {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-  }
-  .mobapp-item {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    border: transparent;
-    background-color: none;
-  }
-  
-  
-  
+    z-index: 10;
 }
+
+#flip-card .flip-card-back p::-webkit-scrollbar {
+    width: 7px;
+    height: 50px;
+    background: linear-gradient(#feeab3, transparent);
+    border-radius: 8px;
+}
+
+#flip-card .flip-card-back p::-webkit-scrollbar-thumb {
+    background: linear-gradient(#e3a702, transparent);
+    border-radius: 8px;
+    border: 1px solid #e3a702;
+}
+
+.flip-card-front iframe::-webkit-scrollbar {
+    width: 0px;
+}
+
+#flip-card .flip-card-back .out {
+    margin: 10px;
+    width: 340px;
+    height: 221px;
+    overflow: auto;
+    position: relative;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio .app-item {
+    margin-bottom: 2%;
+}
+
+.portfolio #app-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio #app-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.6s ease-in-out;
+    border-radius: 3px;
+}
+
+.portfolio #app-flters li:hover {
+    color: rgba(255, 94, 19);
+    background-color: transparent;
+}
+
+.portfolio #app-flters li.filter-activee {
+    color: #151515;
+    background: #ffc451;
+}
+
+.portfolio #app-flters li:last-child {
+    margin-right: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+#webportfolio {
+    padding: 60px 0px 100px 0px
+}
+
+@media only screen and (max-width: 600px) {
+    #webportfolio {
+        padding: 60px 0px 180px 0px;
+        margin: 0px
+    }
+    .portfolio #app-flters {
+        padding: 10px;
+        margin: 0px auto 0px auto;
+        list-style: none;
+        text-align: center;
+    }
+    .portfolio #app-flters li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 2%;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #444444;
+        margin-bottom: 0px;
+        transition: all 0.6s ease-in-out;
+        border-radius: 3px;
+    }
+    .portfolio #app-flters li:hover {
+        color: rgba(255, 94, 19);
+        background-color: transparent;
+    }
+    .portfolio #app-flters li.filter-activee {
+        color: #151515;
+        background: #ffc451;
+    }
+    .portfolio #app-flters li:last-child {
+        margin-right: 0;
+    }
+    .mobileportfolio {
+        display: block;
+    }
+    .desktopportfolio {
+        display: none;
+    }
+    #flip-btn-load1 {
+        position: absolute;
+        left: 83%;
+        bottom: 80%;
+        height: 29px;
+        width: 50px;
+        background-color: rgba(146, 135, 105, 0.4);
+        font-size: 16px;
+        padding: 0px;
+        font-weight: 500;
+        color: white;
+        animation: color-change 2s infinite;
+        z-index: 9999;
+    }
+    #flip-card {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        background-color: transparent;
+        margin: auto;
+        padding: 0;
+        margin-left: -2.5%;
+        border-radius: 0px;
+        -o-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        -o-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    .port-container {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        padding: 0;
+        margin-bottom: -30px;
+        margin-top: 15px;
+    }
+    .mobileportfolio .swiper-slide {
+        width: 100%;
+        transform: translateY(-3px);
+        height: 220px;
+        background-color: transparent;
+    }
+    .mobileportfolio .websiteslider {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    .mobileportfolio .swiper-wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    .mobapp-item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: transparent;
+        background-color: none;
+    }
+}
+
 @media only screen and (max-width: 940px) and (min-width:200px) {
-  .adj{
-    margin-bottom: 10px;
-    line-height: 0.5;
-  }
+    .adj {
+        margin-bottom: 10px;
+        line-height: 0.5;
+    }
 }
-

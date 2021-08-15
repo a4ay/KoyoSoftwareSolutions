@@ -48,7 +48,6 @@ const AddPopup = (props) => {
     const [selectedFile, setSelectedFile] = useState(null)
 
     const onChangeHandler = event => {
-        console.log(event.target.files[0])
         setSelectedFile(event.target.files[0])
         // console.log(event.target.files[0].name)
         // fetch('http://localhost:4400/uploadImage', {
@@ -96,7 +95,6 @@ const AddPopup = (props) => {
         }
         productDetails['img'] = selectedFile.name
 
-        console.log(productDetails);
         fetch('http://localhost:4400/addBuyerServices', {
             method: 'POST',
             headers: {
@@ -116,7 +114,6 @@ const AddPopup = (props) => {
         })
         .then(data => {
             setProductId(data._id)
-            console.log(data._id);
         })
     }
 

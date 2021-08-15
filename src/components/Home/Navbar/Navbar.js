@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import commingSoonPopUp from '../../PopUps/CommingSoonPopUp';
 import { Button, Modal, Nav } from "react-bootstrap";
 import * as firebase from "firebase/app";
 import "firebase/auth";
@@ -17,6 +18,7 @@ import WebText from "../../../TextData";
 import { Link } from "react-router-dom";
 
 import { HashLink } from "react-router-hash-link";
+import CommingSoonPopUp from "../../PopUps/CommingSoonPopUp";
 
 const scrollWidthOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -31,6 +33,7 @@ const scrollWidthOffset2 = (el) => {
 
 const Navbar1 = (props) => {
   const [show, setShow] = useState(false);
+  const [popUpTitle, setPopUpTitle] = useState('');
   const [menu,setMenu] = useState(false);
   const handleMenu=()=>{
     if(menu)
@@ -91,7 +94,6 @@ const Navbar1 = (props) => {
         localStorage.setItem("ttsPhoto", photoURL);
       })
       .catch((err) => {
-        console.log(err);
         console.log(err.message);
       });
   };
@@ -150,7 +152,15 @@ const Navbar1 = (props) => {
     setMenu(false);
   }
     
-
+  const scrollToID = (id) => {
+    if(id==='home'){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }else{
+      var ele = document.getElementById(id);  
+      window.scrollTo({ top: ele.offsetTop, behavior: "smooth" });
+    }
+    nav2Deactive();
+  };
   // useState(() => {
   //     if (clickedNav === true) {
   //         document.getElementById("header").className='navActive'
@@ -198,6 +208,7 @@ const Navbar1 = (props) => {
   }
   const [modal4,setModal4]=useState(true)
   return (
+    <>
     <header id="header" className="fixed-top">
       <div className="container d-flex justify-content-between">
         {/* toggle button */}
@@ -222,14 +233,14 @@ const Navbar1 = (props) => {
 
         {/* logo */}
         <div>
-          <Link to="/" className="logo">
+          <Link onClick={()=>{scrollToID('home')}} to="/" className="logo">
             <img src={logo} alt="SoftSite" className="img-fluid" />
           </Link>
         </div>
 
         {/* desktop nav */}
         <div className="navbarcontainer">
-          <HashLink className="navbarlinks" smooth to="/">
+          <HashLink onClick={()=>{scrollToID('home')}} className="navbarlinks" smooth to="/">
             {WebText.home.navbar.navItems.item1}
           </HashLink>
           <div class="dropdown  ">
@@ -245,8 +256,8 @@ const Navbar1 = (props) => {
               >
                 Web Design
               </HashLink>
-              <HashLink className="navbarlinksdropdown">AI and ML</HashLink>
-              <HashLink className="navbarlinksdropdown">
+              <HashLink onClick={()=>{setPopUpTitle('AI and ML')}} className="navbarlinksdropdown">AI and ML</HashLink>
+              <HashLink onClick={()=>{setPopUpTitle('Learn and Code')}} className="navbarlinksdropdown">
                 Learn and Code
               </HashLink>
               <HashLink
@@ -265,7 +276,11 @@ const Navbar1 = (props) => {
           <HashLink className="navbarlinks" scroll={(el) => scrollWidthOffset2(el)} smooth to="#contact">
             {WebText.home.navbar.navItems.item5}
           </HashLink>
-          <a
+        </div>
+
+        {/* button */}
+        <nav className='signInNav'>
+        <a
             style={{ marginTop: "-2px",marginLeft:"20px" }}
             href="https://wa.me/919867910690"
             rel="noreferrer"
@@ -275,24 +290,18 @@ const Navbar1 = (props) => {
               style={{ color: "#f3c15d", fontSize: "23px" }}
               className="bi bi-whatsapp"
             ></i>
-          </a>{" "}
+          </a>
           <a
-            style={{ marginTop: "-2px", marginLeft: "20px" }}
+            style={{ marginTop: "-2px", marginLeft: "20px", marginRight:'20px' }}
             href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=KoyoSoftwareSolutions@gmail.com#"
             target="_blank"
             rel="noreferrer"
           >
-            {" "}
             <i
               style={{ color: "#f3c15d", paddingLeft: "4%", fontSize: "24px" }}
               className="bi bi-envelope"
             ></i>
           </a>
-        </div>
-
-        {/* button */}
-        <nav>
-  
           {user.googleSignIn ? (
             <div>
               <Link
@@ -336,11 +345,11 @@ const Navbar1 = (props) => {
         >
           <li id="home" className="nav-item">
           
-              <Link className="nav-link secondNav" to="/">
+              <Link  onClick={() => scrollToID('home')} className="nav-link secondNav" to="/">
                 {WebText.home.navbar.navItems.item1}
               </Link>
           </li>
-          <li className="drop-down nav-item dropdown" id="secondNavServices">
+          <li style={{ padding:'0px',margin: "0px" }} className="drop-down nav-item dropdown" id="secondNavServices">
             <Link
               className="nav-link dropdown-toggle"
               to="/services"
@@ -350,7 +359,7 @@ const Navbar1 = (props) => {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <span style={{ paddingLeft: "13px" }}>
+              <span style={{ padding:'0px' }}>
                 {WebText.home.navbar.navItems.item2.main}
               
               </span>
@@ -370,36 +379,32 @@ const Navbar1 = (props) => {
                 onClick={nav2Deactive}
               ></button>
 
-              <HashLink className="dropdown-item" 
+              <Link className="dropdown-item" 
               smooth to="#webportfolio"
-                scroll={(el) => scrollWidthOffset(el)}>
+                onClick={() => scrollToID('webportfolio')}>
                 {WebText.home.navbar.navItems.item2.item2}
-              </HashLink>
-              <Link className="dropdown-item"  to="#webportfolio">
+              </Link>
+              <Link className="dropdown-item"  onClick={()=>{setPopUpTitle('AI and ML')}}>
                 {WebText.home.navbar.navItems.item2.item3}
               </Link>
-              <Link className="dropdown-item" to="#">
+              <Link className="dropdown-item" onClick={()=>{setPopUpTitle('Learn and Code')}} to="#">
                 {WebText.home.navbar.navItems.item2.item4}
               </Link>
-              <HashLink className="dropdown-item" smooth to="#brandingsols"
-                scroll={(el) => scrollWidthOffset(el)}>
+              <Link className="dropdown-item" smooth to="#brandingsols"
+                onClick={() => scrollToID('brandingsols')}>
                 {WebText.home.navbar.navItems.item2.item5}
-              </HashLink>
+              </Link>
             </div>
           </li>
-
-          <li id="about" className="nav-item">
-            
-              <HashLink className="navbarlinksdropdown"  smooth to="#jobs">
-                {WebText.home.navbar.navItems.item4}
-              </HashLink>
-            
+          <li className="nav-item">
+            <Link className="nav-link" onClick={() => scrollToID('jobs')} to="/" >
+              {WebText.home.navbar.navItems.item4}
+            </Link>
           </li>
-
-          <li id="5" className="nav-item">
-              <HashLink className="nav-link" smooth to="#contact">
-                {WebText.home.navbar.navItems.item5}
-              </HashLink>
+          <li className="nav-item">
+            <Link className="nav-link" onClick={() => scrollToID('contact')} smooth >
+              {WebText.home.navbar.navItems.item5}
+            </Link>
           </li>
         </ul>
       </div>
@@ -455,6 +460,9 @@ const Navbar1 = (props) => {
       </Modal>
      
     </header>
+    {popUpTitle&&<CommingSoonPopUp title={popUpTitle} setTitle={setPopUpTitle}/>}
+
+    </>
   );
 };
 

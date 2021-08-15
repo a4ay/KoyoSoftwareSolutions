@@ -35,7 +35,6 @@ function Details(props){
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    console.log(name, value);
     var ee = "";
     var ef = "";
 
@@ -47,7 +46,6 @@ function Details(props){
       ef = "Please enter a valid email";
     }
     if (name === "in_hours") {
-      console.log("in hours we need" + value);
     }
     setErr(ee);
     setErrEmail(ef);
@@ -84,9 +82,7 @@ function Details(props){
         available_inhours: "",
         available_inmonths: "",
       });
-      console.log(records);
     } else {
-      console.log(applicationDetails.available_inhours + "in hours");
       if (
         applicationDetails.applicantname === "" ||
         applicationDetails.applicantemail === "" ||
@@ -117,8 +113,6 @@ function Details(props){
     setIsOpen2(true);
 
     setIsOpen3(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
 
   function afterOpenModal2() {
@@ -135,8 +129,6 @@ function Details(props){
     setIsOpen1(true);
     setIsOpen2(false);
     setIsOpen3(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
 
   function closeModal1() {
@@ -148,8 +140,6 @@ function Details(props){
     setIsOpen3(true);
     setIsOpen1(false);
     setIsOpen2(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
 
   function closeModal3() {

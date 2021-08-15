@@ -132,7 +132,6 @@ function ApplicationForm() {
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    console.log(name, value);
     var ee = "";
     var ef = "";
 
@@ -144,7 +143,6 @@ function ApplicationForm() {
       ef = "Please enter a valid email";
     }
     if (name === "available_inhours") {
-      console.log("in hours we need" + value);
     }
     setErr(ee);
     setErrEmail(ef);
@@ -162,7 +160,6 @@ function ApplicationForm() {
     }
   };
   const handleCV= (e)=>{
-    console.log(applicationDetails)
     if(e.target.files[0].size>2097152){
       alert('give file size less than 2MB')
       setApplicationDetails({...applicationDetails,CVFile: null})
@@ -220,7 +217,6 @@ function ApplicationForm() {
       data.append("file",formData.CVFile)
       data.append("upload_preset", "koyosoftware")
       data.append("cloud_name", "dpbzuwwto")
-      console.log(data)
       await fetch(`https://api.cloudinary.com/v1_1/dpbzuwwto/image/upload`,{
       method:"post",
       body: data
@@ -242,7 +238,6 @@ function ApplicationForm() {
           break;
         }
       }
-      console.log(formData)
       const response = await fetch("https://dkr31m892d.execute-api.ap-south-1.amazonaws.com/prod/koyoSoftware", {
             method: "POST",
             headers: {
@@ -253,7 +248,6 @@ function ApplicationForm() {
             .then((res) => res.json())
             .then(async (res) => {
                 const resData = await res;
-                console.log(resData);
                 })
             .catch((err)=>console.log(err))
             setIsOpen3(false);
@@ -270,14 +264,6 @@ function ApplicationForm() {
         applicationDetails.skill3 === "" ||
         applicationDetails.skill4 === "" 
       ) {
-        console.log(applicationDetails.applicantname === "" ||
-        applicationDetails.applicantemail === "" ||
-        applicationDetails.available_inhours === "" ||
-        applicationDetails.available_inmonths === "" ||
-        applicationDetails.skill1 === "" ||
-        applicationDetails.skill2 === "" ||
-        applicationDetails.skill3 === "" ||
-        applicationDetails.skill4 === "" )
         var blinkobj={
           name: applicationDetails.applicantname==="",
           email: applicationDetails.applicantemail==="",
@@ -315,8 +301,6 @@ function ApplicationForm() {
     setIsOpen2(true);
 
     setIsOpen3(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
   function openForm(id){
     setBlinks({
@@ -401,13 +385,10 @@ function ApplicationForm() {
       sessionStorage.setItem(id,JSON.stringify({available_inhours: "",available_inmonths: ""}))
     }
     
-    console.log(applicationDetails.skills)
     setIsOpen1(false);
     setIsOpen2(true);
 
     setIsOpen3(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
 
   function afterOpenModal2() {
@@ -424,8 +405,6 @@ function ApplicationForm() {
     setIsOpen1(true);
     setIsOpen2(false);
     setIsOpen3(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
 
   function closeModal1() {
@@ -437,8 +416,6 @@ function ApplicationForm() {
     setIsOpen3(true);
     setIsOpen1(false);
     setIsOpen2(false);
-    console.log(modalIsOpen2);
-    console.log("submitted");
   }
 
   function closeModal3() {

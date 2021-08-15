@@ -156,7 +156,6 @@ const AdminDashboard = () => {
                 setAppointments(data)
             })
     }, [])
-    console.log(appointments)
     // const rows1 = [];
     // let countPending = 0
     // let countTodaysAppointments = 0

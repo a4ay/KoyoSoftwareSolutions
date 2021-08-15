@@ -39,7 +39,6 @@ const EditPopup = (props) => {
 
     const handleUpdate = (data) => {
         data.preventDefault()
-        console.log(formData)
         fetch('http://localhost:4400/updateBuyerServices/'+props._id, {
             method: 'PATCH',
             headers: {

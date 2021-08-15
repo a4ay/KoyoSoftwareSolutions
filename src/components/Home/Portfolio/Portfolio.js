@@ -32,8 +32,6 @@ function Portfolio() {
   const slideswebsite8 = [];
   var i;
   for (i = 0; i < WebText.home.portfolio.portfolioListData.length; i++) {
-    console.log(WebText.home.portfolio.portfolioListData[i].title);
-    console.log(WebText.home.portfolio.portfolioListData[i].category);
 
     if (
       WebText.home.portfolio.portfolioListData[i].category === "filter-latest"
@@ -269,10 +267,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite1}
             </Swiper>
@@ -290,10 +284,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite2}
             </Swiper>
@@ -311,10 +301,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite3}
             </Swiper>
@@ -332,10 +318,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite4}
             </Swiper>
@@ -353,10 +335,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite5}
             </Swiper>
@@ -374,10 +352,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite6}
             </Swiper>
@@ -395,10 +369,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite7}
             </Swiper>
@@ -416,10 +386,6 @@ function Portfolio() {
               spaceBetween={10}
               speed={1000}
               onInit={(swiper) => console.log("Swiper initialized!", swiper)}
-              onSlideChange={(swiper) => {
-                console.log("Slide index changed to: ", swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log("Swiper end reached")}
             >
               {slideswebsite8}
             </Swiper>
