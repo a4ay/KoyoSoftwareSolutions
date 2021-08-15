@@ -1,0 +1,60 @@
+[debug] [2021-08-15T21:02:53.102Z] ----------------------------------------------------------------------
+[debug] [2021-08-15T21:02:53.104Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-08-15T21:02:53.104Z] CLI Version:   8.13.1
+[debug] [2021-08-15T21:02:53.104Z] Platform:      darwin
+[debug] [2021-08-15T21:02:53.104Z] Node Version:  v12.16.1
+[debug] [2021-08-15T21:02:53.105Z] Time:          Mon Aug 16 2021 02:32:53 GMT+0530 (India Standard Time)
+[debug] [2021-08-15T21:02:53.105Z] ----------------------------------------------------------------------
+[debug] [2021-08-15T21:02:53.105Z] 
+[debug] [2021-08-15T21:02:53.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-15T21:02:53.116Z] > authorizing via signed-in user
+[debug] [2021-08-15T21:02:53.116Z] [iam] checking project koyosoftsolutions for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-15T21:02:53.118Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/koyosoftsolutions:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-15T21:02:54.820Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 15 Aug 2021 21:02:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1459","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-15T21:02:54.822Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/koyosoftsolutions  
+ 
+[debug] [2021-08-15T21:02:55.331Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 15 Aug 2021 21:02:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'koyosoftsolutions'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-15T21:02:55.334Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/koyosoftsolutions/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-15T21:02:57.483Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 15 Aug 2021 21:02:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[koyosoftsolutions]: beginning deploy... 
+[info] i  hosting[koyosoftsolutions]: found 442 files in build 
+[debug] [2021-08-15T21:02:59.633Z] [hosting] hash cache [YnVpbGQ] stored for 442 files
+[debug] [2021-08-15T21:02:59.635Z] [hosting][hash queue][FINAL] {"max":1472,"min":13,"avg":204.6877828054298,"active":0,"complete":442,"success":442,"errored":0,"retried":0,"total":442,"elapsed":2087}
+[debug] [2021-08-15T21:02:59.636Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/koyosoftsolutions/versions/b21420a31f8ea866:populateFiles  
+ <request body omitted>
+[debug] [2021-08-15T21:03:02.738Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 15 Aug 2021 21:03:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-15T21:03:02.743Z] [hosting][populate queue][FINAL] {"max":3118,"min":3118,"avg":3118,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3120}
+[debug] [2021-08-15T21:03:02.744Z] [hosting] uploads queued: 6
+[debug] [2021-08-15T21:03:06.097Z] [hosting][upload queue][FINAL] {"max":3356,"min":2626,"avg":3031.6666666666665,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":3357}
+[info] ✔  hosting[koyosoftsolutions]: file upload complete 
+[debug] [2021-08-15T21:03:06.099Z] [hosting] deploy completed after 8614ms
+[debug] [2021-08-15T21:03:06.261Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "koyosoftsolutions"
+    },
+    "site": "koyosoftsolutions",
+    "version": "sites/koyosoftsolutions/versions/b21420a31f8ea866"
+  }
+]
+[info] i  hosting[koyosoftsolutions]: finalizing version... 
+[debug] [2021-08-15T21:03:06.262Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/koyosoftsolutions/versions/b21420a31f8ea866?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-08-15T21:03:08.031Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 15 Aug 2021 21:03:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-15T21:03:08.032Z] [hosting] finalized version for koyosoftsolutions: {"name":"sites/koyosoftsolutions/versions/b21420a31f8ea866","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-08-15T21:02:57.287400Z","createUser":{"email":"bhavyam.kr.goyal@gmail.com"},"finalizeTime":"2021-08-15T21:03:08.087811Z","finalizeUser":{"email":"bhavyam.kr.goyal@gmail.com"}}
+[info] ✔  hosting[koyosoftsolutions]: version finalized 
+[info] i  hosting[koyosoftsolutions]: releasing new version... 
+[debug] [2021-08-15T21:03:08.033Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/koyosoftsolutions/releases?version_name=sites/koyosoftsolutions/versions/b21420a31f8ea866  
+ {"message":null}
