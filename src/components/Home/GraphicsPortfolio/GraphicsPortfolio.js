@@ -108,7 +108,7 @@ function GraphicsPortfolio() {
                 pauseOnClick={true}
                 gradient={false}
                 speed={"30"}
-                style={{ paddingBottom: "3%" }}
+                style={{ paddingTop: "4%" }}
               >
                 <div align="center" className="marqueefilters">
                   <button className="filter-button" data-filter="banner">
