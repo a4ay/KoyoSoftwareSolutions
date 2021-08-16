@@ -162,7 +162,7 @@ function ApplicationForm() {
     }
   };
   const handleCV= (e)=>{
-    console.log(applicationDetails)
+    console.log(e.target)
     if(e.target.files[0].size>2097152){
       alert('give file size less than 2MB')
       setApplicationDetails({...applicationDetails,CVFile: null})
