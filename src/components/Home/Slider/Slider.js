@@ -59,8 +59,8 @@ function Slider() {
           </div>
 
 
-          <div id="column2" >
-            {WebText.home.featuresListData[i].description}
+          <div id="column2" dangerouslySetInnerHTML={{__html: WebText.home.featuresListData[i].description}} style={{userSelect: "text"}}>
+            {/* {WebText.home.featuresListData[i].description} */}
           </div></div></SwiperSlide>
 
     );
