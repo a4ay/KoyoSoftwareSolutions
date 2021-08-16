@@ -256,7 +256,7 @@ const Navbar1 = (props) => {
               >
                 Web Design
               </HashLink>
-              <HashLink onClick={()=>{setPopUpTitle('AI and ML')}} className="navbarlinksdropdown">AI and ML</HashLink>
+              <HashLink onClick={()=>{setPopUpTitle('AI & ML')}} className="navbarlinksdropdown">AI & ML</HashLink>
               <HashLink onClick={()=>{setPopUpTitle('Learn and Code')}} className="navbarlinksdropdown">
                 Learn and Code
               </HashLink>
@@ -384,7 +384,7 @@ const Navbar1 = (props) => {
                 onClick={() => scrollToID('webportfolio')}>
                 {WebText.home.navbar.navItems.item2.item2}
               </Link>
-              <Link className="dropdown-item"  onClick={()=>{setPopUpTitle('AI and ML')}}>
+              <Link className="dropdown-item"  onClick={()=>{setPopUpTitle('AI & ML')}}>
                 {WebText.home.navbar.navItems.item2.item3}
               </Link>
               <Link className="dropdown-item" onClick={()=>{setPopUpTitle('Learn and Code')}} to="#">

@@ -910,7 +910,7 @@ function ApplicationForm() {
               </button>
               
               <button class="button" data-filter=".aiml">
-                AI ML
+                AI & ML
               </button>
             </div>
           </div>
