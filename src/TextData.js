@@ -185,7 +185,7 @@ if (WebsiteText === null) {
             // },
             item2: "Web Design",
             item3: "AI & ML",
-            item4: "Learn and Code",
+            item4: "Code & Learn",
             item5: "Branding Solutions",
           },
           item3: "About",
@@ -220,7 +220,7 @@ if (WebsiteText === null) {
           {
             classBox: "mt-4",
             icon: "../Images/Web Icon/Code Camp icon.png",
-            name: "Learn and Code",
+            name: "Code & Learn",
           },
           {
             classBox: "mt-4",
@@ -267,7 +267,7 @@ if (WebsiteText === null) {
         {
           classDiv: "",
           icon: "bx-images",
-          title: "Coding Camp",
+          title: "Code & Learn",
           description:
             "We teach code styling and structuring  to students who want to learn professional coding.  Our pedagogy style is learn-by-doing.  Candidates take up projects lasting one to four months during which they are exposed to many differences in academic and professional coding.  They can focus on the front end, get more experience with backend or take up the challenge of full stack programming.  We run our Code Camp as an internship.  If you are interested in the MERN stack, advanced styling, building serverless applications with AWS lambda functions or building  better apps in react native then check out current opportunities here or email us your CV and a brief statement of purpose.",
           link: "/learnAndCode",
@@ -277,9 +277,9 @@ if (WebsiteText === null) {
         {
           classDiv: "",
           icon: "bx-shield",
-          title: "Branding Sols",
+          title: "Branding Solutions",
           description:
-            "We help you build your corporate identity by designing cover pages and display pictures for your social media platforms, visiting cards, logos, stickers or mock-ups for product packaging that resonate with your corporate strategy, have a high recall value and are unique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum  Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nun sed ullamcorper ipsum",
+            "We understand that in the digital space you either stand out or stand alone.  Whether you communicate your brand through website, social media, brochures, banners, window decals, corporate gifts or vinyl wraps for your vehicle we can help you create attractive, stills or short videos and animations.  We make an effort to choose the typography, color balance, 3D effects and themes that resonate with your corporate strategy, have a high recall value and are unique.  We are experienced with Adobe Photoshop, InDesign, Illustrator and Premiere.  Click here to check out some of the work we have done for our clients or email us samples of what you need and someone from our team will be right with you.",
           link: "/brandingSolutions",
           img: BrandingSols,
           imgmob: BrandingSolsMob,
@@ -386,7 +386,7 @@ if (WebsiteText === null) {
             name: "Amit Agarwal, PhD",
             title: "Chief Executive Officer",
             description:
-              "He holds a PhD in Electrical Engineering from Nanyang Tech University and an MS in Financial Math from the London School of Economics. He is responsible for delivering the human, technology and execution infrastructure clients expect of TTS. He is an amateur food chemist.",
+              "He holds a PhD in Electrical Engineering from Nanyang Tech University and an MS in Financial Math from the London School of Economics. He is responsible for delivering the human, technology and execution infrastructure clients expect of KSS. He has lived and worked in four countries before founding KSS.  He is an amateur food chemist.",
           },
           {
             data_aos_delay: "200",
@@ -402,29 +402,29 @@ if (WebsiteText === null) {
             name: "Maryam Esmaiel",
             title: "Technology Manager",
             description:
-              "She holds a Bachelors in Artificial Intelligence from the University of Damascus. At TTS she leads product development for Learn and Code, manages projects in Optical Character Recognition for Latin and Arabic scripts and leads idea generation for Graphics Design projects. She likes cats, mattah and Artificial Intelligence.",
+              "She holds a Bachelors in Artificial Intelligence from the University of Damascus. At TTS she leads product development for Code & Learn, manages projects in Optical Character Recognition for Latin and Arabic scripts and leads idea generation for Graphics Design projects. She likes cats, mattah and Artificial Intelligence.",
           },
         ],
       },
       portfolio: {
-        title: "Check Our Portfolio",
+        title: "Web Design Portfolio",
         description: "Websites",
         portfolioListData: [
           {
             img: portfolio1,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
+              "desiFirangi is a modern, dark theme, multilingual food truck website with a fully responsive design.  With prominently displayed and intuitively placed call-to-action buttons, it gives a pleasing appearance to visitors.  If you have built a great clientele but are concerned about margins being eaten away by food delivery intermediaries or simply would like to build a strong digital presence to attract floating visitors such as tourists then desiFirangi is designed just for you.",
+            technologies: " reactJS, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " Ladakh, India",
             link: "https://desifirangifoods.web.app/",
             category: "filter-restaurant",
           },
           {
             img: portfolio2,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
+              "Eka is a social media platform for non fngible tokens (NFTs) and Social Token Ecosystem with a focus on NFT First & no-coiner crowd.  Users can create, trade, share or gift their tokens or simply discuss their features over Eka.  The website has a well-thought user interaction platform and has multiple access levels for different users.",
+            technologies: " html, scss, css, JS, AWS lambda",
+            hosting: " Delhi, India",
             link: "https://eka.network/",
             category: "filter-latest",
           },
@@ -432,18 +432,18 @@ if (WebsiteText === null) {
           {
             img: portfolio4,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
+              "The website has been designed for boutique sellers who have a small mart - perfect for sellers of dried fruits, honey, coffee, speciality chocolates or handicraft items.",
+            technologies: " MERN stack, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " under development",
             link: "https://grocery-website-tts.web.app",
             category: "filter-ecommerce",
           },
           {
             img: portfolio5,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
+              "This website has a simple single page design for manufacturers of prefabricated or insulated structures such as Guard Cabin, Portable Container, Labor Room, Bungalows and more.  It allows website owner to buy or sell various kinds of properties right from the site with full site administration functionalities.",
+            technologies: " reactJS, nodeJS, expressJS, Firebase, BootStrap, JS, CSS",
+            hosting: " J&K, India",
             link: "https://realestate-jk.web.app",
             category: "filter-realestate",
           },
@@ -451,19 +451,19 @@ if (WebsiteText === null) {
           {
             img: portfolio7,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
-            link: "https://www.sevencolors7.com",
+              "The website has been designed for sevenColors - a Dubai-based company that offers the broadest range of printing services.  The print types are organized in hierarchies across multiple categories making it easy for a visitor to find what she is looking for.  The website design is kept separate for mobile and large screen devices to enhance visitor experience.  Product price estimates can be computed on the fly and, without requiring servers which increase monthly cost to clients.  The design of this website is particularly noteworthy for reducing number of pages from about hundred to under 5 without sacrificing functionalities that are expected by printing companies with wide offerings.",
+            technologies: " reactJS, BootStrap, JS, CSS",
+            hosting: " Dubai, UAE",
+            link: "https://print-o-magic.firebaseapp.com/",
             category: "filter-portfolio",
           },
           {
             img: portfolio8,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
-            link: "https://koyoaccountassistant.web.app",
+              "This is a responsive, website with a clear, professional feel.  While it has only a few pages, it is loaded with features - blogs, case studies, video and photo galleries, a scrolling deadline, calculators, and other features expected of a classy and interactive accounting website.  The typography, color balance, animations are designed specifically to support the message that professional services firms would like to convey.  It has several cool features, including, being able to download and edit forms that have been auto, pre-filled by the server based on client details available with the website owner.",
+            technologies: " MERN, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " Karnataka, India",
+            link: "https://koyoaccountassistant.web.app/",
             category: "filter-latest",
           },
           {
@@ -472,7 +472,7 @@ if (WebsiteText === null) {
               "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
             technologies: "reactJS, BootStrap, JS, CSS",
             hosting: " Antibes, France",
-            link: " https://samskrithi-goshala.web.app",
+            link: " https://samskrithi-goshala.web.app/",
             category: "filter-latest",
           },
           {
@@ -514,7 +514,7 @@ if (WebsiteText === null) {
         ],
       },
       graphicsportfolio: {
-        title: "Check Our Portfolio",
+        title: "Digital Art Portfolio",
         description: "Branding Solutions",
         graphicsportfolioListData: [
           {
@@ -1557,7 +1557,7 @@ if (WebsiteText === null) {
         title: "Our Services",
         item1: "Web Design",
         item2: "AI & Machine Learning",
-        item3: "Learn and Code",
+        item3: "Code & Learn",
         item4: "Branding Solutions",
       },
       lastPart: {
