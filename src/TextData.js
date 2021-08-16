@@ -184,7 +184,7 @@ if (WebsiteText === null) {
             //     item2: "Seller Services"
             // },
             item2: "Web Design",
-            item3: "AI and ML",
+            item3: "AI & ML",
             item4: "Learn and Code",
             item5: "Branding Solutions",
           },
@@ -215,7 +215,7 @@ if (WebsiteText === null) {
           {
             classBox: "mt-4",
             icon: "../Images/Web Icon/AI&ML.png",
-            name: "AI and ML",
+            name: "AI & ML",
           },
           {
             classBox: "mt-4",
@@ -249,7 +249,7 @@ if (WebsiteText === null) {
           icon: "bx-receipt",
           title: "Web Design",
           description:
-            "We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis",
+            "If achieving a balance between site uniqueness and user experience on one hand and lifecycle cost on the other is turning out to be hard then you came to the right place.  Our designs are secure, efficient, functionally rich and SEO-friendly.  Your website communicates your brand globally – we pay particular attention to navigation intuitiveness, typography, color balance and animation placements to leave a pleasing impression on your target audience.  We account for differences in browsing behavior on mobile devices and large screens right in the design stage.  We can substantially lower your third-party costs and upgrade costs using functionalities developed inhouse.  We work with the MERN stack.  Click here to check our portfolio.  Call us.  Let’s make it simple.",
           link: "/webDesign",
           img: WebDesign,
           imgmob: WebDesignMob,
@@ -257,9 +257,9 @@ if (WebsiteText === null) {
         {
           classDiv: "mt-lg-0",
           icon: "bx-cube-alt",
-          title: "AI ML",
+          title: "AI & ML",
           description:
-            "We deliver bespoke solutions for chatbots, OCR for English and Arabic ID cards, OCR for accountants, Automated vehicle number plate reading, AI-driven user-adapted landing pages, pop-ups and loading time optimization. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel risque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissi  In at libero sed nunc venenatis imperdiet sed ornare turpis",
+            "We specialize in image processing and climbing robots.  In image processing we work on optical character recognition for automated extraction of textual data from images for accountants and lawyers.  For climbing robots we make the functional, mechanical and structural designs, design and calibrate controller systems and manufacture the robot using off-the-shelf components.  Climbing robots are useful for damage detection in civil structures, harvesting from tall trees or spraying insecticides or pesticides, intelligence gathering, enhancing situational awareness in urban or jungle warfare Whether you wish to build a proof-of-concept demonstrator for interdepartmental or client communication, or a final product call us to find out more.",
           link: "/aiAndml",
           img: AIML,
           imgmob: AIMLMob,
@@ -269,7 +269,7 @@ if (WebsiteText === null) {
           icon: "bx-images",
           title: "Coding Camp",
           description:
-            "We deliver short-duration courses of 1-6 week duration. we focus on two segments: 11-14 year olds with no prior experience and, professionals or university students who are keen on acquiring hands-on experience using real-life data in AI, machine learning and image processing. We focus on learning-by-doing with 80% project work and 20% theory. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet",
+            "We teach code styling and structuring  to students who want to learn professional coding.  Our pedagogy style is learn-by-doing.  Candidates take up projects lasting one to four months during which they are exposed to many differences in academic and professional coding.  They can focus on the front end, get more experience with backend or take up the challenge of full stack programming.  We run our Code Camp as an internship.  If you are interested in the MERN stack, advanced styling, building serverless applications with AWS lambda functions or building  better apps in react native then check out current opportunities here or email us your CV and a brief statement of purpose.",
           link: "/learnAndCode",
           img: CodeCamp,
           imgmob: CodeCampMob,
