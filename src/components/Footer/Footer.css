@@ -1,218 +1,219 @@
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #3a3a3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #3a3a3a;
 }
 
 #preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 0px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffc451;
-  border-top-color: #3a3a3a;
-  border-bottom-color: #3a3a3a;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+    content: "";
+    position: fixed;
+    top: calc(50% - 0px);
+    left: calc(50% - 30px);
+    border: 6px solid #ffc451;
+    border-top-color: #3a3a3a;
+    border-bottom-color: #3a3a3a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer {
-  background: black;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 20px 0;
+    background: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 #footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #ffb03b;
-  position: relative;
-  padding: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffb03b;
+    position: relative;
+    padding: 0;
 }
 
 .priv1 {
-  padding-bottom: 5px;
-  margin-left: 3%;
+    padding-bottom: 5px;
+    margin-left: 3%;
 }
+
 .priv1:hover {
-  color: #ffb03b;
-  cursor: pointer;
+    color: #ffb03b;
+    cursor: pointer;
 }
 
 .priv2 {
-  margin-left: -5%;
-  padding-bottom: 5px;
+    margin-left: -5%;
+    padding-bottom: 5px;
 }
+
 .priv2:hover {
-  color: #ffb03b;
-  cursor: pointer;
+    color: #ffb03b;
+    cursor: pointer;
 }
+
 #footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
 }
 
 #footer .social-links {
-  margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 #footer .social-links .twitter {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 #footer .social-links .phone {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 #footer .social-links .linkedin {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 #footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: rgb(81,63,0);
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+    font-size: 18px;
+    display: inline-block;
+    background: rgb(255, 176, 59);
+    ;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
 }
 
 #footer .social-links a:hover {
-  background: #ffb03b;
+    background: #ffb03b;
 }
 
 #footer .copyright {
-  margin: 0 0 3px 0;
-  font-size: 13px;
+    margin: 0 0 3px 0;
+    font-size: 13px;
 }
 
 #footer .credits {
-  font-size: 11px;
+    font-size: 11px;
 }
 
 .contact .info-wrap {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
 .contact .info {
-  background: #fff;
-  padding-left: 20%;
+    background: #fff;
+    padding-left: 20%;
 }
 
 .contact .info i {
-  font-size: 20px;
-
-  float: center;
-
-  width: 44px;
-  height: 44px;
-  background: #fff !important;
-  color: #ffb03b !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    float: center;
+    width: 44px;
+    height: 44px;
+    background: #fff !important;
+    color: #ffb03b !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #433f39;
-  font-family: "Poppins", sans-serif;
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #433f39;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #7a7368;
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #7a7368;
 }
 
 @media only screen and (max-width: 450px) {
-  #footer .social-links a {
-    font-size: 22px;
-    display: inline-block;
-    background: rgb(81,63,0);
-    color: #fff;
-    line-height: 1;
-    padding: 2px;
-    margin-right: 4px;
-    margin-bottom: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 28px;
-    height: 28px;
-    transition: 0.3s;
-  }
-  #footer .social-links .twitter {
-    margin-left: 5px;
-  }
-
-  #footer .social-links .phone {
-    margin-left: 5px;
-  }
-
-  #footer .social-links .linkedin {
-    margin-right: 5px;
-  }
-  .contact {
-    width: 100%;
-  }
-  .contact .info i {
-    font-size: 30px;
-
-    float: center;
-
-    width: 44px;
-    height: 44px;
-  }
-  .contact .info {
-    padding-left: 2%;
-  }
+    #footer .social-links a {
+        font-size: 22px;
+        display: inline-block;
+        background: rgb(255, 176, 59);
+        color: #fff;
+        line-height: 1;
+        padding: 2px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 28px;
+        height: 28px;
+        transition: 0.3s;
+    }
+    #footer .social-links .twitter {
+        margin-left: 5px;
+    }
+    #footer .social-links .phone {
+        margin-left: 5px;
+    }
+    #footer .social-links .linkedin {
+        margin-right: 5px;
+    }
+    .contact {
+        width: 100%;
+    }
+    .contact .info i {
+        font-size: 30px;
+        float: center;
+        width: 44px;
+        height: 44px;
+    }
+    .contact .info {
+        padding-left: 2%;
+    }
 }

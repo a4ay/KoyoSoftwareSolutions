@@ -42,12 +42,11 @@ function App() {
         <Router>
           <Switch>
             <Route exact path='/'>
-           
-              <Header/>
-              <Home/>
              
+              <Home/>
+
             </Route>
-            <Route path='/account'>
+            {/* <Route path='/account'>
               <Navbar active=""/>
               <HeaderForAll title='Account'/>
               <Registration/>
@@ -125,10 +124,6 @@ function App() {
               <ProfessionalsToolbox/>
               <Footer />
             </Route>
-            {/* <Route path='/chat'>
-              <Chat/>
-              <Footer />
-            </Route> */}
             <Route path='/about'>
               <Navbar active="about"/>
               <HeaderForAll 
@@ -139,10 +134,6 @@ function App() {
               <Footer/>
             </Route>
          
-            {/* <Route path='/cart'>
-              <Cart/>
-              <Footer />
-            </Route> */}
             <Route path='/join'>
               <Navbar active=""/>
               <HeaderForAll 
@@ -165,7 +156,7 @@ function App() {
             <Route path='/admin'>
               <Navbar active=""/>
               <HeaderForAll title='Admin Login Page'/>
-              {/* <Admin/> */}
+             
               <AdminDashboardLogin/>
               <Footer/>
             </Route>
@@ -176,7 +167,7 @@ function App() {
             <Route path='/dashboard'>
               <AdminDashboard/>
               <Footer />
-            </Route>
+            </Route> */}
 
             
             <Route path='*'>

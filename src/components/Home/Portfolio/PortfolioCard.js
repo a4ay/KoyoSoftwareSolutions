@@ -11,7 +11,6 @@ import "swiper/swiper-bundle.css";
 import { Autoplay } from "swiper";
 
 function PortfolioCard(props) {
-  console.log(props);
   var category = WebText.home.portfolio.portfolioListData[props.i].category;
   var img = WebText.home.portfolio.portfolioListData[props.i].img;
   var link = WebText.home.portfolio.portfolioListData[props.i].link;
@@ -40,8 +39,7 @@ function PortfolioCard(props) {
         </button>
       </div>
 
-      <div className="flip-card-back">
-        <p>
+      <div className="flip-card-back">   
           {description}
           <div id="downn">
             <br />
@@ -56,7 +54,6 @@ function PortfolioCard(props) {
             <img className="contactpic" src={Email} alt="" />{" "}
             <img className="contactpic" src={Call} class="img-fluid" alt="" />
           </div>
-        </p>
         <img
           src={img}
           style={{

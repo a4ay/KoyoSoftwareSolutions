@@ -23,7 +23,6 @@ class InputSkills extends Component {
             skills: skills
         })
         this.props.onAdd(this.state.skills);
-        console.log(skills)
     }
 
     // add skill
@@ -33,7 +32,6 @@ class InputSkills extends Component {
     
         const value = e.target.value
         if (e.key === "Enter" && value) {
-            console.log(skills)
             // check if duplicate skill
             if (skills.find(skill => skill.name.toLowerCase() === value.toLowerCase())) {
                 return alert("No duplicate value allowed")

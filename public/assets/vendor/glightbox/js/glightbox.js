@@ -3004,7 +3004,6 @@
           }
         }
 
-        console.log('stopSlideVideo is deprecated, use slidePlayerPause');
         var player = this.getSlidePlayerInstance(slide);
 
         if (player && player.playing) {
@@ -3039,7 +3038,6 @@
           }
         }
 
-        console.log('playSlideVideo is deprecated, use slidePlayerPlay');
         var player = this.getSlidePlayerInstance(slide);
 
         if (player && !player.playing) {
@@ -3058,8 +3056,6 @@
         }
 
         var player = this.getSlidePlayerInstance(slide);
-        console.log('Player is');
-        console.log(player);
 
         if (player && !player.playing) {
           player.play();

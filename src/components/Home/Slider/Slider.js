@@ -27,19 +27,11 @@ function Slider() {
   SwiperCore.use([Autoplay])
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [controlledSwiper, setControlledSwiper] = useState(null);
-
   const slides = [];
-
   var i = 1
   for (i = 0; i < 4; i++) {
-    console.log(WebText.home.featuresListData[i].title);
-
     slides.push(
-
       <SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
-
-
-
         <div className=" sliderheading" styles={WebText.home.featuresListData[i].classDiv}>{WebText.home.featuresListData[i].title}</div>
         <div className="wrapper">
 
@@ -99,20 +91,10 @@ function Slider() {
 
           speed={1000}
           onInit={(swiper) => console.log('Swiper initialized!', swiper)}
-          onSlideChange={(swiper) => {
-            console.log('Slide index changed to: ', swiper.activeIndex);
-          }}
-          onReachEnd={() => console.log('Swiper end reached')}
-
-
-
-
-
+         
         >
           {slides}
         </Swiper>
-
-
       </div>
 
 
