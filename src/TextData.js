@@ -469,46 +469,46 @@ if (WebsiteText === null) {
           {
             img: portfolio6,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
-            link: " https://samskrithi-goshala.web.app/",
+              "Samskrithi Goshala is an NGO-oriented website.  It is designed specifically for organizations that work with cows with multifaceted activities including, genetic breed diversity conservation, organizing rescue, engaging with volunteers globally and running their own little online shop in order to make their work more sustainable.  That's right - it is also an eCommerce site.  The website has a great color balance, intuitive UIs that take into account differences in mobile and large screen navigation and includes automated emails for online forms and queries.",
+            technologies: " MERN, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " Kerala, India",
+            link: "https://samskrithi-goshala.web.app/",
             category: "filter-latest",
           },
           {
             img: portfolio3,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
+              "This is a multi-page, responsive website for large NGOs.  It offers many points of user engagement including, donation, engaging visitors in social media campaigns, taking in volunteer applications and providing information and engaging with visitors on ongoing or completed projects projects.",
+            technologies: " MERN, BootStrap, JS, CSS",
+            hosting: " under development",
             link: "https://ngo-website-tts.web.app/",
             category: "filter-ngo",
           },
           {
             img: portfolio6,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
-            link: " https://samskrithi-goshala.web.app",
+              "Samskrithi Goshala is an NGO-oriented website.  It is designed specifically for organizations that work with cows with multifaceted activities including, genetic breed diversity conservation, organizing rescue, engaging with volunteers globally and running their own little online shop in order to make their work more sustainable.  That's right - it is also an eCommerce site.  The website has a great color balance, intuitive UIs that take into account differences in mobile and large screen navigation and includes automated emails for online forms and queries.",
+            technologies: " MERN, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " Kerala, India",
+            link: "https://samskrithi-goshala.web.app/",
             category: "filter-ngo",
           },
           {
             img: portfolio1,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
+              "desiFirangi is a modern, dark theme, multilingual food truck website with a fully responsive design.  With prominently displayed and intuitively placed call-to-action buttons, it gives a pleasing appearance to visitors.  If you have built a great clientele but are concerned about margins being eaten away by food delivery intermediaries or simply would like to build a strong digital presence to attract floating visitors such as tourists then desiFirangi is designed just for you.",
+            technologies: " reactJS, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " Ladakh, India",
             link: "https://desifirangifoods.web.app/",
             category: "filter-latest",
           },
           {
             img: portfolio8,
             description:
-              "desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-            technologies: "reactJS, BootStrap, JS, CSS",
-            hosting: " Antibes, France",
-            link: "https://koyoaccountassistant.web.app",
+            "This is a responsive, website with a clear, professional feel.  While it has only a few pages, it is loaded with features - blogs, case studies, video and photo galleries, a scrolling deadline, calculators, and other features expected of a classy and interactive accounting website.  The typography, color balance, animations are designed specifically to support the message that professional services firms would like to convey.  It has several cool features, including, being able to download and edit forms that have been auto, pre-filled by the server based on client details available with the website owner.",
+            technologies: " MERN, BootStrap, JS, CSS, AWS Lambda",
+            hosting: " Karnataka, India",
+            link: "https://koyoaccountassistant.web.app/",
             category: "filter-professional",
           },
         ],
@@ -924,25 +924,25 @@ if (WebsiteText === null) {
           {
             id: 1,
             topic:
-              "Grip Controller optimisation for a coconut tree climbing robotic harvester",
-            keywords: "Robotics , CAD, Simulation, Controls",
+              "Design web icons and website graphics",
+            keywords: "UI/UX Design, Photoshop, Canvas, Controls",
             projectdescription:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
-            duration: "4 Month",
+              "Modern-looking websites have matching graphics, typography, color balance and 3D-looks.  KSS is looking for a candidate who is imaginative, artistic and well-versed with all technical functionalities of photoshop.  During the internship the candidate will produce a suite of web icons to replace usual 'select', 'hover', 'click' and other icons.  These icons will take after elements representing website theme - e.g. a mouse pointer may be designed as a honey ladle to replace the standard pointer icon on a honey website.  The other key task in the internship is to make web cards, blending various photos and abstracting various parts of a photo and reusing them in imaginative ways in order to suit the website themes.",
+            duration: "2 Month",
             skills:
-              "CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-            deadline: "Aug 15, 21",
-            appID: "KSS-P01-20210701",
+              "Photoshop, Canvas knowledge preferred, Ability to work independently",
+            deadline: "Sep 05, 21",
+            appID: "KSS-P02-20210801",
             filter: "graphics internship",
             videourl: "L61p2uyiMSo",
             slideonepicture: "https://source.unsplash.com/t4wI_Wv6g_k",
             slidetwopicture: "https://source.unsplash.com/BG1WfIjx1f4",
             projecttitle:
-              "Grip Controller optimisation for a coconut tree climbing robotic harvester",
+              "Design web icons and website graphics",
             projectbackground:
-              " Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally. Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard. Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available. Click",
+              "TBD",
             projectbrief:
-              "Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally. Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard. Globally, c40 billion coconuts are harvested annually.",
+              "DBT",
           },
           {
             id: 2,
