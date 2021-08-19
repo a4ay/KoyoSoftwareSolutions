@@ -91,6 +91,7 @@ img.responsive_mob {
 .swiper-pagination {
     bottom: 0;
     padding: 10px;
+    z-index: 99 !important;
 }
 
 .slider .swiper-wrapper {

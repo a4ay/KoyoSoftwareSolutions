@@ -9,6 +9,7 @@ import downloadfile from "../../../img/java.pdf";
 import cross from "../Images/cross.png";
 import ModalVideo from "react-modal-video";
 import "./modal-video.scss";
+import { CloseButton } from "react-bootstrap";
 /* eslint-env jquery */
 // external js: isotope.pkgd.js
 
@@ -85,6 +86,7 @@ function ApplicationForm() {
   const [modalIsOpen3, setIsOpen3] = useState(false);
   const [modalIsOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setOpen5] = useState(false);
+  const [success,setSuccess]=useState(false)
 
   const [applicationDetails, setApplicationDetails] = useState({
     jobID: "",
@@ -120,6 +122,9 @@ function ApplicationForm() {
     skill4: false,
     CVFile: false
   })
+  const customStyles = {
+    overlay: { zIndex: 10000 }
+  };
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -202,6 +207,7 @@ function ApplicationForm() {
       });
       alert("Your details have been submitted")
       setIsOpen3(false);
+      // setSuccess(true);
       setErr("");
       var projects=WebText.home.projects.projectListData;
       var formData=newRecord
@@ -328,7 +334,7 @@ function ApplicationForm() {
         CVFile: details.CVFile,
       })
     }
-    else if(details!=null && details1===null){
+    else if(details!=null && details1==null){
       setApplicationDetails({
         jobID: details.jobID,
         applicantname: details.applicantname,
@@ -347,7 +353,7 @@ function ApplicationForm() {
         otherurl5: details.otherurl5,
         CVFile: details.CVFile,
       })  
-      sessionStorage.setItem(details.jobId,JSON.stringify({available_inhours: "",available_inmonths: ""}))
+      sessionStorage.setItem(details.jobID,JSON.stringify({available_inhours: "",available_inmonths: ""}))
     }
     else{
       setApplicationDetails({
@@ -717,10 +723,10 @@ function ApplicationForm() {
                   <option value="" selected>
                     Hours/Week*
                   </option>
-                  <option value="10">10 Hr/Week</option>
-                  <option value="15">15 Hr/Week</option>
-                  <option value="20">20 Hr/Week</option>
-                  <option value="30">30 Hr/Week</option>
+                  <option value="10Hr/Week">10 Hr/Week</option>
+                  <option value="15Hr/Week">15 Hr/Week</option>
+                  <option value="20Hr/Week">20 Hr/Week</option>
+                  <option value="30Hr/Week">30 Hr/Week</option>
                   <option value="Full Time">Full Time</option>
                 </select>
               </div>
@@ -739,12 +745,12 @@ function ApplicationForm() {
                   <option selected value="">
                     Months*
                   </option>
-                  <option value="1">1 Month</option>
-                  <option value="2">2 Month</option>
-                  <option value="3">3 Month</option>
-                  <option value="4">4 Month</option>
-                  <option value="5">6 Month</option>
-                  <option value="6">9 Month</option>
+                  <option value="1 Month">1 Month</option>
+                  <option value="2 Months">2 Months</option>
+                  <option value="3 Months">3 Months</option>
+                  <option value="4 Months">4 Months</option>
+                  <option value="6 Months">6 Months</option>
+                  <option value="9 Months">9 Months</option>
                   <option value="Full Time">Full Time</option>
                 </select>
               </div>
@@ -971,6 +977,7 @@ function ApplicationForm() {
                         contentLabel="Example Modal4"
                         className="Modal4"
                         overlayClassName="Overlay4"
+                        style={customStyles}
                       >
                         
                         <ModalVideo
@@ -1104,6 +1111,22 @@ function ApplicationForm() {
           </div>
         </div>
       </section>
+      <div className="success-form" style={{ position: "absolute",left: window.width>="500px"?"auto":"5%",top: "10%",width: window.width>="500px"?"500px":"90%",padding: "5%",
+        backgroundColor: "white",color: "black",zIndex: "9999",display: success?"block":"none",borderRadius: "5px",boxShadow: "0 4px 8px 0 rgba(0,0,0,0.9)",boxSizing: "border-box" }}> 
+                    <p>
+                    Dear {applicationDetails.applicantname},<br/><br/>
+
+                    Thank you for your interest in working with us.Your application has been submitted.<br />
+                     We will review it and comeback to you.
+                        <br/>
+                        <br/>
+                        Sincerely,
+                        <br/>     
+                        HR <br/>     
+                        KoyoSoftwareSolutions
+                    </p>
+                    <CloseButton onClick={() => setSuccess(false)} style={{ position: "absolute",top: "5%",left: "90%",fontSize: "40px" }}/>
+        </div>
     </>
   );
 }
