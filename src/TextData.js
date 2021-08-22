@@ -947,48 +947,48 @@ if (WebsiteText === null) {
           {
             id: 2,
             topic:
-              "Grip Controller optimisation for a coconut tree climbing robotic harvester",
-            keywords: "Robotics , CAD, Simulation, Controls",
+              "Front-end development of a printing services website",
+            keywords: "Web development, Client engagement pop-up, Printing services",
             projectdescription:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
-            duration: "4 Month",
+              "Printing services firms intermediate between clients and firms that run various kinds of printing machines.  They aggregate volumes and thereby provide cheaper access for a really wide ranged of printing needs.  Your task in this project is to develop a responsive front-end with intuitive layout and animations in order to display a large number of print types.  The UI is complex as each print type typically comes with 10 to 30 items.  You will also implement an automated email and phone number verification system as part of a client engagement pop-up.",
+            duration: "3 Month",
             skills:
-              "CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-            deadline: "Aug 15, 21",
-            appID: "KSS-P01-20210702",
+              "reactJS, JS, CSS, Bootstrap, Flexbox, Material UI, nodemailer",
+            deadline: "Sep 15, 21",
+            appID: "KSS-P01-20210801",
             filter: "webdesign internship",
             videourl: "L61p2uyiMSo",
             slideonepicture: "https://source.unsplash.com/t4wI_Wv6g_k",
             slidetwopicture: "https://source.unsplash.com/BG1WfIjx1f4",
             projecttitle:
-              "Grip Controller optimisation for a coconut tree climbing robotic harvester",
+              "Front-end development of a printing services website",
             projectbackground:
-              " Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally. Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard. Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available. Click",
+              "TBD. Click",
             projectbrief:
-              "Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally. Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard. Globally, c40 billion coconuts are harvested annually.",
+              "TBD",
           },
           {
             id: 3,
             topic:
-              "Grip Controller optimisation for a coconut tree climbing robotic harvester",
+              "Grip mechanism design and analysis for a robotic coconut harvester",
             keywords: "Robotics , CAD, Simulation, Controls",
             projectdescription:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
-            duration: "4 Month",
+              "The project involves functional, methodology, and mechanical deign of a gripper whose purpose is to harvest coconuts from a coconut tree.  This project builds on an earlier project that focused on design of a coconut tree climber and 3-DOF arm chassis-mounted arm that would position the gripper to enable it to harvest coconuts.  Motion planning, static and dynamic stress analysis and modal frequency analysis are part of the design.",
+            duration: "2 Month",
             skills:
-              "CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-            deadline: "Aug 15, 21",
-            appID: "KSS-P01-20210703",
+              "SolidWorks, Machine design, Constrained inverse kinematics, Dynamics analysis",
+            deadline: "Sep 30, 21",
+            appID: "KSS-P03-20210801",
             filter: "robotics permanent",
             videourl: "L61p2uyiMSo",
             slideonepicture: "https://source.unsplash.com/t4wI_Wv6g_k",
             slidetwopicture: "https://source.unsplash.com/BG1WfIjx1f4",
             projecttitle:
-              "Grip Controller optimisation for a coconut tree climbing robotic harvester",
+              "Grip mechanism design and analysis for a robotic coconut harvester",
             projectbackground:
-              " Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally. Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard. Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available. Click",
+              "TBD.  Click",
             projectbrief:
-              "Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally. Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard. Globally, c40 billion coconuts are harvested annually.",
+              "TBD",
           },
           {
             id: 4,
