@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import Manager from '../../../Utils/SessionManager';
 import commingSoonPopUp from '../../PopUps/CommingSoonPopUp';
 import { Button, Modal, Nav } from "react-bootstrap";
 import * as firebase from "firebase/app";
@@ -35,6 +36,7 @@ const Navbar1 = (props) => {
   const [show, setShow] = useState(false);
   const [popUpTitle, setPopUpTitle] = useState('');
   const [menu,setMenu] = useState(false);
+  Manager.showPopUp=setPopUpTitle;
   const handleMenu=()=>{
     if(menu)
       document.getElementById("navbarNav").style.display = "none";
@@ -156,8 +158,12 @@ const Navbar1 = (props) => {
     if(id==='home'){
       window.scrollTo({ top: 0, behavior: "smooth" });
     }else{
+      var off=0;
+      if(id==="brandingsols"){
+        off=70;
+      }
       var ele = document.getElementById(id);  
-      window.scrollTo({ top: ele.offsetTop, behavior: "smooth" });
+      window.scrollTo({ top: ele.offsetTop-off, behavior: "smooth" });
     }
     nav2Deactive();
   };
@@ -380,7 +386,7 @@ const Navbar1 = (props) => {
               ></button>
 
               <Link className="dropdown-item" 
-              smooth to="#webportfolio"
+                to="/"
                 onClick={() => scrollToID('webportfolio')}>
                 {WebText.home.navbar.navItems.item2.item2}
               </Link>
@@ -390,7 +396,7 @@ const Navbar1 = (props) => {
               <Link className="dropdown-item" onClick={()=>{setPopUpTitle('Learn and Code')}} to="#">
                 {WebText.home.navbar.navItems.item2.item4}
               </Link>
-              <Link className="dropdown-item" smooth to="#brandingsols"
+              <Link className="dropdown-item" to="/"
                 onClick={() => scrollToID('brandingsols')}>
                 {WebText.home.navbar.navItems.item2.item5}
               </Link>

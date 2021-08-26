@@ -43,7 +43,7 @@ function GraphicsPortfolio() {
             <img src={close} onClick={Open} className="closee" alt="" />
             <div className="overlaygraphics">
               <div className="textgraphicstitle">
-                Busy Morning Coffee{" "}
+                Busy Morning Coffeez
                 <a target="_blank" href="https://wa.me/919867910690">
                   <img className="graphicsocial" src={whatsapp} alt="" />
                 </a>

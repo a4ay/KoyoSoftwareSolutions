@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
+import Manager from '../../../Utils/SessionManager';
 import { HashLink as Link } from "react-router-hash-link";
 import "../Images/Web Icon/Web Design icon.svg";
 const HeaderElement = (props) => {
@@ -9,22 +10,26 @@ const HeaderElement = (props) => {
   const link = props.link;
   const image = props.image;
   const scrollWidthOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+      const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
   return (
+    <>
     <div className={classAdd}>
       <div className="icon-box">
         <img src={image} alt="icon" />
         {/*  <i className={icon}></i><h3><a href={'#'+link}>{name}</a></h3>*/}
         <h3>
-          {" "}
           <Link
             className="link"
             smooth
             to={smooth}
+            onClick={()=>{
+              if(name==='AI and ML'||name==='Learn and Code'){
+                Manager.showPopUp(name);
+              }
+            }}
             scroll={(el) => scrollWidthOffset(el)}
           >
             {name}
@@ -32,6 +37,7 @@ const HeaderElement = (props) => {
         </h3>
       </div>
     </div>
+    </>
   );
 };
 
