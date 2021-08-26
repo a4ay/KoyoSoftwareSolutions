@@ -39,7 +39,8 @@ function PortfolioCard(props) {
         </button>
       </div>
 
-      <div className="flip-card-back">   
+      <div className="flip-card-back">  
+        <p> 
           {description}
           <div id="downn">
             <br />
@@ -54,6 +55,7 @@ function PortfolioCard(props) {
             <img className="contactpic" src={Email} alt="" />{" "}
             <img className="contactpic" src={Call} class="img-fluid" alt="" />
           </div>
+        </p>
         <img
           src={img}
           style={{
