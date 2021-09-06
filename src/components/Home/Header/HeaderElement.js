@@ -26,7 +26,7 @@ const HeaderElement = (props) => {
             smooth
             to={smooth}
             onClick={()=>{
-              if(name==='AI and ML'||name==='Learn and Code'){
+              if(name==='AI & ML'||name==='Code & Learn'){
                 Manager.showPopUp(name);
               }
             }}
