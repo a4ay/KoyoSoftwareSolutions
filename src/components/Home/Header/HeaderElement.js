@@ -9,9 +9,21 @@ const HeaderElement = (props) => {
   const classAdd = "col-xl-2 col-md-4 col-6 " + classBox;
   const link = props.link;
   const image = props.image;
+
+  // const scrollWidthOffset = (el) => {
+  //     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  //     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  // };
+  
   const scrollWidthOffset = (el) => {
-      const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = 10;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+  const scrollWidthOffset2 = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -60;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
   return (
@@ -30,7 +42,13 @@ const HeaderElement = (props) => {
                 Manager.showPopUp(name);
               }
             }}
-            scroll={(el) => scrollWidthOffset(el)}
+            scroll={(el) => {
+              if(name==="Web Design"){
+                scrollWidthOffset(el)
+              }else{
+                scrollWidthOffset2(el)
+              }
+            }}
           >
             {name}
           </Link>
