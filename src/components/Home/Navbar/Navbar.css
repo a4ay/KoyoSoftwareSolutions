@@ -422,7 +422,7 @@ li:hover>a {
         background: transparent;
     }
     #header {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.8);
     }
     #header.header-scrolled,
     #header.header-inner-pages {
