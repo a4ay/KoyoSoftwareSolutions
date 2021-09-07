@@ -18,7 +18,7 @@
 }
 
 .port-container {
-    width: 85%;
+    width: 80%;
     margin: auto;
     margin-top: 50px;
 }
@@ -307,7 +307,7 @@
 }
 
 #webportfolio {
-    padding: 60px 0px 100px 0px
+    padding: 60px 0px 100px 0px;
 }
 
 @media only screen and (max-width: 600px) {
